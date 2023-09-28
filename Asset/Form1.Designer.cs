@@ -32,9 +32,9 @@ namespace Asset
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.btnimportexport = new System.Windows.Forms.Button();
             this.btncontabilidad = new System.Windows.Forms.Button();
             this.btncompras = new System.Windows.Forms.Button();
-            this.btnimportexport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -44,7 +44,7 @@ namespace Asset
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -57,35 +57,6 @@ namespace Asset
             this.splitContainer1.Size = new System.Drawing.Size(2606, 1062);
             this.splitContainer1.SplitterDistance = 359;
             this.splitContainer1.TabIndex = 0;
-            // 
-            // btncontabilidad
-            // 
-            this.btncontabilidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncontabilidad.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btncontabilidad.Image = ((System.Drawing.Image)(resources.GetObject("btncontabilidad.Image")));
-            this.btncontabilidad.Location = new System.Drawing.Point(610, 9);
-            this.btncontabilidad.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.btncontabilidad.Name = "btncontabilidad";
-            this.btncontabilidad.Size = new System.Drawing.Size(288, 344);
-            this.btncontabilidad.TabIndex = 1;
-            this.btncontabilidad.Text = "Contabilidad";
-            this.btncontabilidad.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btncontabilidad.UseVisualStyleBackColor = true;
-            this.btncontabilidad.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btncompras
-            // 
-            this.btncompras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncompras.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btncompras.Image = ((System.Drawing.Image)(resources.GetObject("btncompras.Image")));
-            this.btncompras.Location = new System.Drawing.Point(24, 6);
-            this.btncompras.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.btncompras.Name = "btncompras";
-            this.btncompras.Size = new System.Drawing.Size(276, 344);
-            this.btncompras.TabIndex = 0;
-            this.btncompras.Text = "Compras";
-            this.btncompras.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btncompras.UseVisualStyleBackColor = true;
             // 
             // btnimportexport
             // 
@@ -100,13 +71,42 @@ namespace Asset
             this.btnimportexport.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnimportexport.UseVisualStyleBackColor = true;
             // 
+            // btncontabilidad
+            // 
+            this.btncontabilidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncontabilidad.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btncontabilidad.Image = ((System.Drawing.Image)(resources.GetObject("btncontabilidad.Image")));
+            this.btncontabilidad.Location = new System.Drawing.Point(610, 9);
+            this.btncontabilidad.Margin = new System.Windows.Forms.Padding(6);
+            this.btncontabilidad.Name = "btncontabilidad";
+            this.btncontabilidad.Size = new System.Drawing.Size(288, 344);
+            this.btncontabilidad.TabIndex = 1;
+            this.btncontabilidad.Text = "Contabilidad";
+            this.btncontabilidad.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btncontabilidad.UseVisualStyleBackColor = true;
+            this.btncontabilidad.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btncompras
+            // 
+            this.btncompras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncompras.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btncompras.Image = ((System.Drawing.Image)(resources.GetObject("btncompras.Image")));
+            this.btncompras.Location = new System.Drawing.Point(24, 6);
+            this.btncompras.Margin = new System.Windows.Forms.Padding(6);
+            this.btncompras.Name = "btncompras";
+            this.btncompras.Size = new System.Drawing.Size(276, 344);
+            this.btncompras.TabIndex = 0;
+            this.btncompras.Text = "Compras";
+            this.btncompras.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btncompras.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2606, 1062);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.splitContainer1.Panel1.ResumeLayout(false);
