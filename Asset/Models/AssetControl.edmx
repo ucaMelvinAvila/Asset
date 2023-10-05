@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AssetcontrolModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Asset">
+          <Key>
+            <PropertyRef Name="AssetID" />
+          </Key>
+          <Property Name="AssetID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PurchaseOrderID" Type="int" />
+          <Property Name="DeclarationID" Type="int" />
+          <Property Name="AssetCostGLAcctNumber" Type="int" />
+          <Property Name="AccumulatedDepreciationGLAcctNumber" Type="int" />
+          <Property Name="DepreciationExpenseGLAcctNumber" Type="int" />
+          <Property Name="AreaDepartment" Type="nvarchar" MaxLength="255" />
+          <Property Name="AssetType1" Type="nvarchar" MaxLength="255" />
+          <Property Name="CategoryType" Type="nvarchar" MaxLength="255" />
+          <Property Name="DateAcquired" Type="date" />
+          <Property Name="PlacedInService" Type="date" />
+          <Property Name="Life" Type="int" />
+          <Property Name="Cost" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="DepreciableBasis" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="CurrentDepreciation" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="AccumulatedDepreciation" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="RetirementDate" Type="date" />
+          <Property Name="TagNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="NewTagNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="Brand" Type="nvarchar" MaxLength="255" />
+          <Property Name="ModelNumber" Type="nvarchar" MaxLength="255" />
+          <Property Name="SerialNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="AssetResponsible" Type="nvarchar" MaxLength="255" />
+          <Property Name="InvoiceNumber" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Declaration">
+          <Key>
+            <PropertyRef Name="DeclarationID" />
+          </Key>
+          <Property Name="DeclarationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PurchaseOrderID" Type="int" />
+          <Property Name="UOM" Type="nvarchar" MaxLength="50" />
+          <Property Name="AssetQuantityCustom" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="GoodsDeclarationNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="GoodsDeclarationSelectivityDate" Type="date" />
+          <Property Name="GoodsDeclarationReference" Type="nvarchar" MaxLength="255" />
+          <Property Name="TariffItemNumberHTS" Type="nvarchar" MaxLength="50" />
+          <Property Name="SupplierNameImportExport" Type="nvarchar" MaxLength="255" />
+          <Property Name="GoodsDeclarationAmount" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Purchasing">
+          <Key>
+            <PropertyRef Name="PurchaseOrderID" />
+          </Key>
+          <Property Name="PurchaseOrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PurchaseNumber" Type="int" />
+          <Property Name="Description" Type="nvarchar" MaxLength="255" />
+          <Property Name="SupplierName" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <Association Name="FK__Asset__Declarati__2A4B4B5E">
+          <End Role="Declaration" Type="Self.Declaration" Multiplicity="0..1" />
+          <End Role="Asset" Type="Self.Asset" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Declaration">
+              <PropertyRef Name="DeclarationID" />
+            </Principal>
+            <Dependent Role="Asset">
+              <PropertyRef Name="DeclarationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Asset__PurchaseO__29572725">
+          <End Role="Purchasing" Type="Self.Purchasing" Multiplicity="0..1" />
+          <End Role="Asset" Type="Self.Asset" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Purchasing">
+              <PropertyRef Name="PurchaseOrderID" />
+            </Principal>
+            <Dependent Role="Asset">
+              <PropertyRef Name="PurchaseOrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Declarati__Purch__267ABA7A">
+          <End Role="Purchasing" Type="Self.Purchasing" Multiplicity="0..1" />
+          <End Role="Declaration" Type="Self.Declaration" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Purchasing">
+              <PropertyRef Name="PurchaseOrderID" />
+            </Principal>
+            <Dependent Role="Declaration">
+              <PropertyRef Name="PurchaseOrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="AssetcontrolModelStoreContainer">
+          <EntitySet Name="Asset" EntityType="Self.Asset" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Declaration" EntityType="Self.Declaration" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Purchasing" EntityType="Self.Purchasing" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Asset__Declarati__2A4B4B5E" Association="Self.FK__Asset__Declarati__2A4B4B5E">
+            <End Role="Declaration" EntitySet="Declaration" />
+            <End Role="Asset" EntitySet="Asset" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Asset__PurchaseO__29572725" Association="Self.FK__Asset__PurchaseO__29572725">
+            <End Role="Purchasing" EntitySet="Purchasing" />
+            <End Role="Asset" EntitySet="Asset" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Declarati__Purch__267ABA7A" Association="Self.FK__Declarati__Purch__267ABA7A">
+            <End Role="Purchasing" EntitySet="Purchasing" />
+            <End Role="Declaration" EntitySet="Declaration" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AssetcontrolModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Asset">
+          <Key>
+            <PropertyRef Name="AssetID" />
+          </Key>
+          <Property Name="AssetID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PurchaseOrderID" Type="Int32" />
+          <Property Name="DeclarationID" Type="Int32" />
+          <Property Name="AssetCostGLAcctNumber" Type="Int32" />
+          <Property Name="AccumulatedDepreciationGLAcctNumber" Type="Int32" />
+          <Property Name="DepreciationExpenseGLAcctNumber" Type="Int32" />
+          <Property Name="AreaDepartment" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="AssetType1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CategoryType" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DateAcquired" Type="DateTime" Precision="0" />
+          <Property Name="PlacedInService" Type="DateTime" Precision="0" />
+          <Property Name="Life" Type="Int32" />
+          <Property Name="Cost" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="DepreciableBasis" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="CurrentDepreciation" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="AccumulatedDepreciation" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="RetirementDate" Type="DateTime" Precision="0" />
+          <Property Name="TagNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NewTagNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Brand" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ModelNumber" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="SerialNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AssetResponsible" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="InvoiceNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Declaration" Relationship="Self.FK__Asset__Declarati__2A4B4B5E" FromRole="Asset" ToRole="Declaration" />
+          <NavigationProperty Name="Purchasing" Relationship="Self.FK__Asset__PurchaseO__29572725" FromRole="Asset" ToRole="Purchasing" />
+        </EntityType>
+        <EntityType Name="Declaration">
+          <Key>
+            <PropertyRef Name="DeclarationID" />
+          </Key>
+          <Property Name="DeclarationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PurchaseOrderID" Type="Int32" />
+          <Property Name="UOM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AssetQuantityCustom" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="GoodsDeclarationNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GoodsDeclarationSelectivityDate" Type="DateTime" Precision="0" />
+          <Property Name="GoodsDeclarationReference" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="TariffItemNumberHTS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SupplierNameImportExport" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="GoodsDeclarationAmount" Type="Decimal" Precision="18" Scale="2" />
+          <NavigationProperty Name="Assets" Relationship="Self.FK__Asset__Declarati__2A4B4B5E" FromRole="Declaration" ToRole="Asset" />
+          <NavigationProperty Name="Purchasing" Relationship="Self.FK__Declarati__Purch__267ABA7A" FromRole="Declaration" ToRole="Purchasing" />
+        </EntityType>
+        <EntityType Name="Purchasing">
+          <Key>
+            <PropertyRef Name="PurchaseOrderID" />
+          </Key>
+          <Property Name="PurchaseOrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PurchaseNumber" Type="Int32" />
+          <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="SupplierName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Assets" Relationship="Self.FK__Asset__PurchaseO__29572725" FromRole="Purchasing" ToRole="Asset" />
+          <NavigationProperty Name="Declarations" Relationship="Self.FK__Declarati__Purch__267ABA7A" FromRole="Purchasing" ToRole="Declaration" />
+        </EntityType>
+        <Association Name="FK__Asset__Declarati__2A4B4B5E">
+          <End Role="Declaration" Type="Self.Declaration" Multiplicity="0..1" />
+          <End Role="Asset" Type="Self.Asset" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Declaration">
+              <PropertyRef Name="DeclarationID" />
+            </Principal>
+            <Dependent Role="Asset">
+              <PropertyRef Name="DeclarationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Asset__PurchaseO__29572725">
+          <End Role="Purchasing" Type="Self.Purchasing" Multiplicity="0..1" />
+          <End Role="Asset" Type="Self.Asset" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Purchasing">
+              <PropertyRef Name="PurchaseOrderID" />
+            </Principal>
+            <Dependent Role="Asset">
+              <PropertyRef Name="PurchaseOrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Declarati__Purch__267ABA7A">
+          <End Role="Purchasing" Type="Self.Purchasing" Multiplicity="0..1" />
+          <End Role="Declaration" Type="Self.Declaration" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Purchasing">
+              <PropertyRef Name="PurchaseOrderID" />
+            </Principal>
+            <Dependent Role="Declaration">
+              <PropertyRef Name="PurchaseOrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Assetcontrol" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Assets" EntityType="Self.Asset" />
+          <EntitySet Name="Declarations" EntityType="Self.Declaration" />
+          <EntitySet Name="Purchasings" EntityType="Self.Purchasing" />
+          <AssociationSet Name="FK__Asset__Declarati__2A4B4B5E" Association="Self.FK__Asset__Declarati__2A4B4B5E">
+            <End Role="Declaration" EntitySet="Declarations" />
+            <End Role="Asset" EntitySet="Assets" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Asset__PurchaseO__29572725" Association="Self.FK__Asset__PurchaseO__29572725">
+            <End Role="Purchasing" EntitySet="Purchasings" />
+            <End Role="Asset" EntitySet="Assets" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Declarati__Purch__267ABA7A" Association="Self.FK__Declarati__Purch__267ABA7A">
+            <End Role="Purchasing" EntitySet="Purchasings" />
+            <End Role="Declaration" EntitySet="Declarations" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AssetcontrolModelStoreContainer" CdmEntityContainer="Assetcontrol">
+          <EntitySetMapping Name="Assets">
+            <EntityTypeMapping TypeName="AssetcontrolModel.Asset">
+              <MappingFragment StoreEntitySet="Asset">
+                <ScalarProperty Name="AssetID" ColumnName="AssetID" />
+                <ScalarProperty Name="PurchaseOrderID" ColumnName="PurchaseOrderID" />
+                <ScalarProperty Name="DeclarationID" ColumnName="DeclarationID" />
+                <ScalarProperty Name="AssetCostGLAcctNumber" ColumnName="AssetCostGLAcctNumber" />
+                <ScalarProperty Name="AccumulatedDepreciationGLAcctNumber" ColumnName="AccumulatedDepreciationGLAcctNumber" />
+                <ScalarProperty Name="DepreciationExpenseGLAcctNumber" ColumnName="DepreciationExpenseGLAcctNumber" />
+                <ScalarProperty Name="AreaDepartment" ColumnName="AreaDepartment" />
+                <ScalarProperty Name="AssetType1" ColumnName="AssetType1" />
+                <ScalarProperty Name="CategoryType" ColumnName="CategoryType" />
+                <ScalarProperty Name="DateAcquired" ColumnName="DateAcquired" />
+                <ScalarProperty Name="PlacedInService" ColumnName="PlacedInService" />
+                <ScalarProperty Name="Life" ColumnName="Life" />
+                <ScalarProperty Name="Cost" ColumnName="Cost" />
+                <ScalarProperty Name="DepreciableBasis" ColumnName="DepreciableBasis" />
+                <ScalarProperty Name="CurrentDepreciation" ColumnName="CurrentDepreciation" />
+                <ScalarProperty Name="AccumulatedDepreciation" ColumnName="AccumulatedDepreciation" />
+                <ScalarProperty Name="RetirementDate" ColumnName="RetirementDate" />
+                <ScalarProperty Name="TagNumber" ColumnName="TagNumber" />
+                <ScalarProperty Name="NewTagNumber" ColumnName="NewTagNumber" />
+                <ScalarProperty Name="Brand" ColumnName="Brand" />
+                <ScalarProperty Name="ModelNumber" ColumnName="ModelNumber" />
+                <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+                <ScalarProperty Name="AssetResponsible" ColumnName="AssetResponsible" />
+                <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Declarations">
+            <EntityTypeMapping TypeName="AssetcontrolModel.Declaration">
+              <MappingFragment StoreEntitySet="Declaration">
+                <ScalarProperty Name="DeclarationID" ColumnName="DeclarationID" />
+                <ScalarProperty Name="PurchaseOrderID" ColumnName="PurchaseOrderID" />
+                <ScalarProperty Name="UOM" ColumnName="UOM" />
+                <ScalarProperty Name="AssetQuantityCustom" ColumnName="AssetQuantityCustom" />
+                <ScalarProperty Name="GoodsDeclarationNumber" ColumnName="GoodsDeclarationNumber" />
+                <ScalarProperty Name="GoodsDeclarationSelectivityDate" ColumnName="GoodsDeclarationSelectivityDate" />
+                <ScalarProperty Name="GoodsDeclarationReference" ColumnName="GoodsDeclarationReference" />
+                <ScalarProperty Name="TariffItemNumberHTS" ColumnName="TariffItemNumberHTS" />
+                <ScalarProperty Name="SupplierNameImportExport" ColumnName="SupplierNameImportExport" />
+                <ScalarProperty Name="GoodsDeclarationAmount" ColumnName="GoodsDeclarationAmount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Purchasings">
+            <EntityTypeMapping TypeName="AssetcontrolModel.Purchasing">
+              <MappingFragment StoreEntitySet="Purchasing">
+                <ScalarProperty Name="PurchaseOrderID" ColumnName="PurchaseOrderID" />
+                <ScalarProperty Name="PurchaseNumber" ColumnName="PurchaseNumber" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

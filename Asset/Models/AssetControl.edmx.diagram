@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="aa901398fb5d49c6b4c26e34ead39ef9" Name="Diagram1">
+        <EntityTypeShape EntityType="AssetcontrolModel.Asset" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AssetcontrolModel.Declaration" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AssetcontrolModel.Purchasing" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <AssociationConnector Association="AssetcontrolModel.FK__Asset__Declarati__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="AssetcontrolModel.FK__Asset__PurchaseO__29572725" ManuallyRouted="false" />
+        <AssociationConnector Association="AssetcontrolModel.FK__Declarati__Purch__267ABA7A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
