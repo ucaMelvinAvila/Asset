@@ -86,6 +86,8 @@ namespace Asset
             this.btncompras = new System.Windows.Forms.Button();
             this.btnimportexport = new System.Windows.Forms.Button();
             this.btncontabilidad = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -104,7 +106,7 @@ namespace Asset
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.MdiWindowListItem = this.windowsMenu;
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(1268, 24);
+            this.menuStrip.Size = new System.Drawing.Size(822, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -133,7 +135,7 @@ namespace Asset
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(162, 38);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.ShowNewForm);
             // 
@@ -447,7 +449,7 @@ namespace Asset
             this.helpToolStripButton});
             this.toolStrip.Location = new System.Drawing.Point(0, 24);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(1268, 39);
+            this.toolStrip.Size = new System.Drawing.Size(822, 39);
             this.toolStrip.TabIndex = 1;
             this.toolStrip.Text = "ToolStrip";
             // 
@@ -522,9 +524,9 @@ namespace Asset
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 502);
+            this.statusStrip.Location = new System.Drawing.Point(0, 465);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1268, 22);
+            this.statusStrip.Size = new System.Drawing.Size(822, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -554,7 +556,7 @@ namespace Asset
             this.btnimportexport.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnimportexport.Image = ((System.Drawing.Image)(resources.GetObject("btnimportexport.Image")));
             this.btnimportexport.Location = new System.Drawing.Point(155, 78);
-            this.btnimportexport.Margin = new System.Windows.Forms.Padding(2);
+            this.btnimportexport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnimportexport.Name = "btnimportexport";
             this.btnimportexport.Size = new System.Drawing.Size(146, 179);
             this.btnimportexport.TabIndex = 5;
@@ -576,11 +578,40 @@ namespace Asset
             this.btncontabilidad.UseVisualStyleBackColor = true;
             this.btncontabilidad.Click += new System.EventHandler(this.btncontabilidad_Click);
             // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(456, 78);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(166, 179);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Administracion de Catalogos";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(628, 78);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(167, 179);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Reportes";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // MDIParent1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1268, 524);
+            this.ClientSize = new System.Drawing.Size(822, 487);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btncontabilidad);
             this.Controls.Add(this.btnimportexport);
             this.Controls.Add(this.btncompras);
@@ -662,6 +693,8 @@ namespace Asset
         private System.Windows.Forms.Button btncompras;
         private System.Windows.Forms.Button btnimportexport;
         private System.Windows.Forms.Button btncontabilidad;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
