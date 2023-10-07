@@ -57,7 +57,7 @@ namespace Asset
             this.label1.Location = new System.Drawing.Point(1646, 1160);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(418, 74);
+            this.label1.Size = new System.Drawing.Size(104, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Asset TAG #:";
             // 
@@ -68,7 +68,7 @@ namespace Asset
             this.label2.Location = new System.Drawing.Point(1646, 2344);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(390, 74);
+            this.label2.Size = new System.Drawing.Size(97, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "ID De la PO:";
             // 
@@ -79,7 +79,7 @@ namespace Asset
             this.label3.Location = new System.Drawing.Point(1646, 3504);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(626, 74);
+            this.label3.Size = new System.Drawing.Size(156, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "ID de la Declaracion:";
             // 
@@ -90,7 +90,7 @@ namespace Asset
             this.label4.Location = new System.Drawing.Point(1646, 4664);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(878, 74);
+            this.label4.Size = new System.Drawing.Size(218, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Numero de Cuenta De Costo:";
             // 
@@ -101,7 +101,7 @@ namespace Asset
             this.label5.Location = new System.Drawing.Point(1646, 5944);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(766, 74);
+            this.label5.Size = new System.Drawing.Size(190, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Depreciacion Acumulada:";
             // 
@@ -112,7 +112,7 @@ namespace Asset
             this.label6.Location = new System.Drawing.Point(1646, 7128);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(834, 74);
+            this.label6.Size = new System.Drawing.Size(209, 20);
             this.label6.TabIndex = 5;
             this.label6.Text = "Depreciacion GLA Expense:";
             // 
@@ -123,7 +123,7 @@ namespace Asset
             this.label7.Location = new System.Drawing.Point(1646, 8312);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(666, 74);
+            this.label7.Size = new System.Drawing.Size(167, 20);
             this.label7.TabIndex = 6;
             this.label7.Text = "Area o Departamento:";
             // 
@@ -134,7 +134,7 @@ namespace Asset
             this.label8.Location = new System.Drawing.Point(1646, 9566);
             this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(458, 74);
+            this.label8.Size = new System.Drawing.Size(112, 20);
             this.label8.TabIndex = 7;
             this.label8.Text = "Tipo de Activo:";
             // 
@@ -145,7 +145,7 @@ namespace Asset
             this.label9.Location = new System.Drawing.Point(1646, 10710);
             this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(610, 74);
+            this.label9.Size = new System.Drawing.Size(151, 20);
             this.label9.TabIndex = 8;
             this.label9.Text = "Categoria de Activo:";
             // 
@@ -156,7 +156,7 @@ namespace Asset
             this.label10.Location = new System.Drawing.Point(1646, 11864);
             this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(666, 74);
+            this.label10.Size = new System.Drawing.Size(165, 20);
             this.label10.TabIndex = 9;
             this.label10.Text = "Fecha de Adquisicion:";
             // 
@@ -167,7 +167,7 @@ namespace Asset
             this.label11.Location = new System.Drawing.Point(1646, 12994);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(652, 74);
+            this.label11.Size = new System.Drawing.Size(162, 20);
             this.label11.TabIndex = 10;
             this.label11.Text = "Fecha de Asignacion:";
             // 
@@ -178,7 +178,7 @@ namespace Asset
             this.label12.Location = new System.Drawing.Point(1774, 14030);
             this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(474, 74);
+            this.label12.Size = new System.Drawing.Size(116, 20);
             this.label12.TabIndex = 11;
             this.label12.Text = "Vida util (Años)";
             // 
@@ -189,7 +189,7 @@ namespace Asset
             this.label13.Location = new System.Drawing.Point(12464, 3504);
             this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(137, 37);
+            this.label13.Size = new System.Drawing.Size(68, 20);
             this.label13.TabIndex = 12;
             this.label13.Text = "Costo $:";
             // 
@@ -200,7 +200,7 @@ namespace Asset
             this.label14.Location = new System.Drawing.Point(12464, 4664);
             this.label14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(586, 74);
+            this.label14.Size = new System.Drawing.Size(147, 20);
             this.label14.TabIndex = 13;
             this.label14.Text = "Base Depreciacion:";
             // 
@@ -211,7 +211,7 @@ namespace Asset
             this.label15.Location = new System.Drawing.Point(12464, 5944);
             this.label15.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(604, 74);
+            this.label15.Size = new System.Drawing.Size(151, 20);
             this.label15.TabIndex = 14;
             this.label15.Text = "Depreciacion Actual";
             // 
@@ -222,7 +222,7 @@ namespace Asset
             this.label16.Location = new System.Drawing.Point(12464, 7258);
             this.label16.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(748, 74);
+            this.label16.Size = new System.Drawing.Size(186, 20);
             this.label16.TabIndex = 15;
             this.label16.Text = "Depreciacion Acumulada";
             // 
@@ -233,7 +233,7 @@ namespace Asset
             this.label17.Location = new System.Drawing.Point(12464, 8466);
             this.label17.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(612, 74);
+            this.label17.Size = new System.Drawing.Size(154, 20);
             this.label17.TabIndex = 16;
             this.label17.Text = "Fecha de deshecho:";
             // 
@@ -244,15 +244,15 @@ namespace Asset
             this.label18.Location = new System.Drawing.Point(12666, 9720);
             this.label18.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(412, 74);
+            this.label18.Size = new System.Drawing.Size(100, 20);
             this.label18.TabIndex = 17;
             this.label18.Text = "Tag Number:";
             // 
             // frmcontabilidad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(4658, 1059);
+            this.ClientSize = new System.Drawing.Size(807, 409);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
