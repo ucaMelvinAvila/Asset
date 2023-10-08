@@ -60,11 +60,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AssetcontrolDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="frmcontabilidad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmcontabilidad.Designer.cs">
+      <DependentUpon>frmcontabilidad.cs</DependentUpon>
     </Compile>
     <Compile Include="frmcompras.cs">
       <SubType>Form</SubType>
@@ -104,8 +104,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmcontabilidad.resx">
+      <DependentUpon>frmcontabilidad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmcompras.resx">
       <DependentUpon>frmcompras.cs</DependentUpon>
