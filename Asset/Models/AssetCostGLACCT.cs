@@ -12,24 +12,19 @@ namespace Asset.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Purchasing
+    public partial class AssetCostGLACCT
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Purchasing()
+        public AssetCostGLACCT()
         {
             this.Accountings = new HashSet<Accounting>();
-            this.ImportExports = new HashSet<ImportExport>();
         }
     
-        public int Idpurchasing { get; set; }
-        public Nullable<int> Id_Supplier { get; set; }
-        public string PurchaseOrder { get; set; }
-        public string Description { get; set; }
+        public int IdAssetCostGLACCT { get; set; }
+        public string AssetCostGLACCT1 { get; set; }
+        public string Comment { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Accounting> Accountings { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ImportExport> ImportExports { get; set; }
-        public virtual Supplier Supplier { get; set; }
     }
 }

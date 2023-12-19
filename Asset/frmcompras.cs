@@ -31,16 +31,18 @@ namespace Asset
 
         private void frmcompras_Load(object sender, EventArgs e)
         {
-            using (Assetcontrol db = new Assetcontrol())
-            {
-                var lst = from d in db.Purchasings
-                          select d;
-                dataGridView2.DataSource = lst.ToList();
+            // TODO: This line of code loads data into the 'assetcontrolDataSet.Purchasing' table. You can move, or remove it, as needed.
+        //    this.purchasingTableAdapter.Fill(this.assetcontrolDataSet.Purchasing);
+        //    using (Assetcontrol db = new Assetcontrol())
+        //    {
+        //        var lst = from d in db.Purchasings
+        //                  select d;
+        //        dataGridView2.DataSource = lst.ToList();
 
-            }
+        //    }
             
             
-        }
+        //}
 
         public void ClearData()
         {
@@ -61,7 +63,7 @@ namespace Asset
             string descripcion = textBox2.Text.Trim();
             string NProveedor = textBox3.Text.Trim();
 
-            dataGridView1.Rows.Add(new object[] { PO, descripcion, NProveedor });
+            dataGridView2.Rows.Add(new object[] { PO, descripcion, NProveedor });
 
             textBox1.Text = "";
             textBox2.Text = "";
