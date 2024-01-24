@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AssetcontrolDataSet6" targetNamespace="http://tempuri.org/AssetcontrolDataSet6.xsd" xmlns:mstns="http://tempuri.org/AssetcontrolDataSet6.xsd" xmlns="http://tempuri.org/AssetcontrolDataSet6.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AssetcontrolConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AssetcontrolConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Asset.Properties.Settings.GlobalReference.Default.AssetcontrolConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Purchasing_VTableAdapter" GeneratorDataComponentClassName="Purchasing_VTableAdapter" Name="Purchasing_V" UserDataComponentName="Purchasing_VTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AssetcontrolConnectionString (Settings)" DbObjectName="Assetcontrol.dbo.Purchasing_V" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NewTagNumber, PurchaseOrder, Description, supplierName FROM dbo.Purchasing_V</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NewTagNumber" DataSetColumn="NewTagNumber" />
+              <Mapping SourceColumn="PurchaseOrder" DataSetColumn="PurchaseOrder" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="supplierName" DataSetColumn="supplierName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AssetcontrolDataSet6" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AssetcontrolDataSet6" msprop:Generator_UserDSName="AssetcontrolDataSet6">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Purchasing_V" msprop:Generator_TableClassName="Purchasing_VDataTable" msprop:Generator_TableVarName="tablePurchasing_V" msprop:Generator_TablePropName="Purchasing_V" msprop:Generator_RowDeletingName="Purchasing_VRowDeleting" msprop:Generator_RowChangingName="Purchasing_VRowChanging" msprop:Generator_RowEvHandlerName="Purchasing_VRowChangeEventHandler" msprop:Generator_RowDeletedName="Purchasing_VRowDeleted" msprop:Generator_UserTableName="Purchasing_V" msprop:Generator_RowChangedName="Purchasing_VRowChanged" msprop:Generator_RowEvArgName="Purchasing_VRowChangeEvent" msprop:Generator_RowClassName="Purchasing_VRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NewTagNumber" msprop:Generator_ColumnVarNameInTable="columnNewTagNumber" msprop:Generator_ColumnPropNameInRow="NewTagNumber" msprop:Generator_ColumnPropNameInTable="NewTagNumberColumn" msprop:Generator_UserColumnName="NewTagNumber">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PurchaseOrder" msprop:Generator_ColumnVarNameInTable="columnPurchaseOrder" msprop:Generator_ColumnPropNameInRow="PurchaseOrder" msprop:Generator_ColumnPropNameInTable="PurchaseOrderColumn" msprop:Generator_UserColumnName="PurchaseOrder" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="supplierName" msprop:Generator_ColumnVarNameInTable="columnsupplierName" msprop:Generator_ColumnPropNameInRow="supplierName" msprop:Generator_ColumnPropNameInTable="supplierNameColumn" msprop:Generator_UserColumnName="supplierName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Purchasing_V" />
+      <xs:field xpath="mstns:NewTagNumber" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -29,22 +29,7 @@ namespace Asset
         }
         
 
-        private void frmcompras_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'assetcontrolDataSet.Purchasing' table. You can move, or remove it, as needed.
-        //    this.purchasingTableAdapter.Fill(this.assetcontrolDataSet.Purchasing);
-        //    using (Assetcontrol db = new Assetcontrol())
-        //    {
-        //        var lst = from d in db.Purchasings
-        //                  select d;
-        //        dataGridView2.DataSource = lst.ToList();
-
-        //    }
-            
-            
-        //}
-
-        public void ClearData()
+         public void ClearData()
         {
             textBox1.Text = textBox2.Text = textBox3.Text = String.Empty;
         }
@@ -71,6 +56,31 @@ namespace Asset
             textBox1.Focus();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            //folderBrowserDialog1.ShowDialog();
+
+            //// Crear una instancia de OpenFileDialog
+            //OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            //// Configurar propiedades del cuadro de diálogo
+            //openFileDialog.Title = "Seleccionar Archivo";
+            //openFileDialog.Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*";
+            //openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+            //// Mostrar el cuadro de diálogo y verificar si se seleccionó un archivo
+            //if (openFileDialog.ShowDialog() == DialogResult.OK)
+            //{
+            //    // Obtener la ruta del archivo seleccionado
+            //    string rutaArchivo = openFileDialog.FileName;
+
+            //    // Aquí puedes realizar acciones con la ruta del archivo
+            //    MessageBox.Show($"Archivo seleccionado: {rutaArchivo}");
+            }
+
+  
+
         //private void button1_Click_1(object sender, EventArgs e)
         //{
         //    using (Models.Assetcontrol db=new Models.Assetcontrol())
@@ -80,7 +90,7 @@ namespace Asset
         //            try
         //            {
         //                Models.Purchasing po = new Models.Purchasing();
-                        
+
 
         //                dbContextAsset.Commit();
         //            }

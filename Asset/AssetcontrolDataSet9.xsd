@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AssetcontrolDataSet9" targetNamespace="http://tempuri.org/AssetcontrolDataSet9.xsd" xmlns:mstns="http://tempuri.org/AssetcontrolDataSet9.xsd" xmlns="http://tempuri.org/AssetcontrolDataSet9.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AssetcontrolConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AssetcontrolConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Asset.Properties.Settings.GlobalReference.Default.AssetcontrolConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AccountingVTableAdapter" GeneratorDataComponentClassName="AccountingVTableAdapter" Name="AccountingV" UserDataComponentName="AccountingVTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AssetcontrolConnectionString (Settings)" DbObjectName="Assetcontrol.dbo.AccountingV" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Record, [New Tag No.], [Asset Cost GL ACCT], Description, [Asset Type], [Date Acquired], [Cost $], Responsible, Supplier FROM dbo.AccountingV</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Record" DataSetColumn="Record" />
+              <Mapping SourceColumn="New Tag No." DataSetColumn="New Tag No_" />
+              <Mapping SourceColumn="Asset Cost GL ACCT" DataSetColumn="Asset Cost GL ACCT" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Asset Type" DataSetColumn="Asset Type" />
+              <Mapping SourceColumn="Date Acquired" DataSetColumn="Date Acquired" />
+              <Mapping SourceColumn="Cost $" DataSetColumn="Cost $" />
+              <Mapping SourceColumn="Responsible" DataSetColumn="Responsible" />
+              <Mapping SourceColumn="Supplier" DataSetColumn="Supplier" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AssetcontrolDataSet9" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AssetcontrolDataSet9" msprop:Generator_UserDSName="AssetcontrolDataSet9">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AccountingV" msprop:Generator_TableClassName="AccountingVDataTable" msprop:Generator_TableVarName="tableAccountingV" msprop:Generator_TablePropName="AccountingV" msprop:Generator_RowDeletingName="AccountingVRowDeleting" msprop:Generator_RowChangingName="AccountingVRowChanging" msprop:Generator_RowEvHandlerName="AccountingVRowChangeEventHandler" msprop:Generator_RowDeletedName="AccountingVRowDeleted" msprop:Generator_UserTableName="AccountingV" msprop:Generator_RowChangedName="AccountingVRowChanged" msprop:Generator_RowEvArgName="AccountingVRowChangeEvent" msprop:Generator_RowClassName="AccountingVRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Record" msprop:Generator_ColumnVarNameInTable="columnRecord" msprop:Generator_ColumnPropNameInRow="Record" msprop:Generator_ColumnPropNameInTable="RecordColumn" msprop:Generator_UserColumnName="Record" type="xs:int" minOccurs="0" />
+              <xs:element name="New_x0020_Tag_x0020_No_" msprop:Generator_ColumnVarNameInTable="columnNew_Tag_No_" msprop:Generator_ColumnPropNameInRow="New_Tag_No_" msprop:Generator_ColumnPropNameInTable="New_Tag_No_Column" msprop:Generator_UserColumnName="New Tag No_">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Asset_x0020_Cost_x0020_GL_x0020_ACCT" msprop:Generator_ColumnVarNameInTable="columnAsset_Cost_GL_ACCT" msprop:Generator_ColumnPropNameInRow="Asset_Cost_GL_ACCT" msprop:Generator_ColumnPropNameInTable="Asset_Cost_GL_ACCTColumn" msprop:Generator_UserColumnName="Asset Cost GL ACCT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Asset_x0020_Type" msprop:Generator_ColumnVarNameInTable="columnAsset_Type" msprop:Generator_ColumnPropNameInRow="Asset_Type" msprop:Generator_ColumnPropNameInTable="Asset_TypeColumn" msprop:Generator_UserColumnName="Asset Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date_x0020_Acquired" msprop:Generator_ColumnVarNameInTable="columnDate_Acquired" msprop:Generator_ColumnPropNameInRow="Date_Acquired" msprop:Generator_ColumnPropNameInTable="Date_AcquiredColumn" msprop:Generator_UserColumnName="Date Acquired" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cost_x0020__x0024_" msprop:Generator_ColumnVarNameInTable="_columnCost__" msprop:Generator_ColumnPropNameInRow="_Cost__" msprop:Generator_ColumnPropNameInTable="_Cost__Column" msprop:Generator_UserColumnName="Cost $" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Responsible" msprop:Generator_ColumnVarNameInTable="columnResponsible" msprop:Generator_ColumnPropNameInRow="Responsible" msprop:Generator_ColumnPropNameInTable="ResponsibleColumn" msprop:Generator_UserColumnName="Responsible" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Supplier" msprop:Generator_ColumnVarNameInTable="columnSupplier" msprop:Generator_ColumnPropNameInRow="Supplier" msprop:Generator_ColumnPropNameInTable="SupplierColumn" msprop:Generator_UserColumnName="Supplier" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AccountingV" />
+      <xs:field xpath="mstns:New_x0020_Tag_x0020_No_" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

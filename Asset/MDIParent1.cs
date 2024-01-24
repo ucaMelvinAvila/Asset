@@ -115,5 +115,11 @@ namespace Asset
             frmcontabilidad frmcontabilidad = new frmcontabilidad();
             frmcontabilidad.ShowDialog();
         }
+
+        private void btnimportexport_Click(object sender, EventArgs e)
+        {
+            frmimportexport frmimportexport = new frmimportexport();
+            frmimportexport.ShowDialog();
+        }
     }
 }

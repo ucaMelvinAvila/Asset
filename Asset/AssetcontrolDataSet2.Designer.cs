@@ -20,17 +20,17 @@ namespace Asset {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("AssetcontrolDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("AssetcontrolDataSet2")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class AssetcontrolDataSet : global::System.Data.DataSet {
+    public partial class AssetcontrolDataSet2 : global::System.Data.DataSet {
         
-        private AssetCostGLACCTDataTable tableAssetCostGLACCT;
+        private AccumulatedDepreciationGLAcctDataTable tableAccumulatedDepreciationGLAcct;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public AssetcontrolDataSet() {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public AssetcontrolDataSet2() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -40,8 +40,8 @@ namespace Asset {
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected AssetcontrolDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected AssetcontrolDataSet2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Asset {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["AssetCostGLACCT"] != null)) {
-                    base.Tables.Add(new AssetCostGLACCTDataTable(ds.Tables["AssetCostGLACCT"]));
+                if ((ds.Tables["AccumulatedDepreciationGLAcct"] != null)) {
+                    base.Tables.Add(new AccumulatedDepreciationGLAcctDataTable(ds.Tables["AccumulatedDepreciationGLAcct"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -76,17 +76,17 @@ namespace Asset {
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public AssetCostGLACCTDataTable AssetCostGLACCT {
+        public AccumulatedDepreciationGLAcctDataTable AccumulatedDepreciationGLAcct {
             get {
-                return this.tableAssetCostGLACCT;
+                return this.tableAccumulatedDepreciationGLAcct;
             }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -99,7 +99,7 @@ namespace Asset {
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Hidden)]
         public new global::System.Data.DataTableCollection Tables {
             get {
@@ -108,7 +108,7 @@ namespace Asset {
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Hidden)]
         public new global::System.Data.DataRelationCollection Relations {
             get {
@@ -117,7 +117,7 @@ namespace Asset {
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         protected override void InitializeDerivedDataSet() {
             this.BeginInit();
             this.InitClass();
@@ -125,35 +125,35 @@ namespace Asset {
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            AssetcontrolDataSet cln = ((AssetcontrolDataSet)(base.Clone()));
+            AssetcontrolDataSet2 cln = ((AssetcontrolDataSet2)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         protected override bool ShouldSerializeTables() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         protected override bool ShouldSerializeRelations() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         protected override void ReadXmlSerializable(global::System.Xml.XmlReader reader) {
             if ((this.DetermineSchemaSerializationMode(reader) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["AssetCostGLACCT"] != null)) {
-                    base.Tables.Add(new AssetCostGLACCTDataTable(ds.Tables["AssetCostGLACCT"]));
+                if ((ds.Tables["AccumulatedDepreciationGLAcct"] != null)) {
+                    base.Tables.Add(new AccumulatedDepreciationGLAcctDataTable(ds.Tables["AccumulatedDepreciationGLAcct"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -171,7 +171,7 @@ namespace Asset {
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         protected override global::System.Xml.Schema.XmlSchema GetSchemaSerializable() {
             global::System.IO.MemoryStream stream = new global::System.IO.MemoryStream();
             this.WriteXmlSchema(new global::System.Xml.XmlTextWriter(stream, null));
@@ -180,42 +180,42 @@ namespace Asset {
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars() {
             this.InitVars(true);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableAssetCostGLACCT = ((AssetCostGLACCTDataTable)(base.Tables["AssetCostGLACCT"]));
+            this.tableAccumulatedDepreciationGLAcct = ((AccumulatedDepreciationGLAcctDataTable)(base.Tables["AccumulatedDepreciationGLAcct"]));
             if ((initTable == true)) {
-                if ((this.tableAssetCostGLACCT != null)) {
-                    this.tableAssetCostGLACCT.InitVars();
+                if ((this.tableAccumulatedDepreciationGLAcct != null)) {
+                    this.tableAccumulatedDepreciationGLAcct.InitVars();
                 }
             }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "AssetcontrolDataSet";
+            this.DataSetName = "AssetcontrolDataSet2";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/AssetcontrolDataSet.xsd";
+            this.Namespace = "http://tempuri.org/AssetcontrolDataSet2.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableAssetCostGLACCT = new AssetCostGLACCTDataTable();
-            base.Tables.Add(this.tableAssetCostGLACCT);
+            this.tableAccumulatedDepreciationGLAcct = new AccumulatedDepreciationGLAcctDataTable();
+            base.Tables.Add(this.tableAccumulatedDepreciationGLAcct);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeAssetCostGLACCT() {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializeAccumulatedDepreciationGLAcct() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
             if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
                 this.InitVars();
@@ -223,9 +223,9 @@ namespace Asset {
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            AssetcontrolDataSet ds = new AssetcontrolDataSet();
+            AssetcontrolDataSet2 ds = new AssetcontrolDataSet2();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -269,34 +269,34 @@ namespace Asset {
             return type;
         }
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void AssetCostGLACCTRowChangeEventHandler(object sender, AssetCostGLACCTRowChangeEvent e);
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void AccumulatedDepreciationGLAcctRowChangeEventHandler(object sender, AccumulatedDepreciationGLAcctRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class AssetCostGLACCTDataTable : global::System.Data.TypedTableBase<AssetCostGLACCTRow> {
+        public partial class AccumulatedDepreciationGLAcctDataTable : global::System.Data.TypedTableBase<AccumulatedDepreciationGLAcctRow> {
             
-            private global::System.Data.DataColumn columnIdAssetCostGLACCT;
+            private global::System.Data.DataColumn columnIdAccumlatedDepGLA;
             
-            private global::System.Data.DataColumn columnAssetCostGLACCT;
+            private global::System.Data.DataColumn columnAccumdDepGLAcct;
             
             private global::System.Data.DataColumn columnComment;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public AssetCostGLACCTDataTable() {
-                this.TableName = "AssetCostGLACCT";
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public AccumulatedDepreciationGLAcctDataTable() {
+                this.TableName = "AccumulatedDepreciationGLAcct";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal AssetCostGLACCTDataTable(global::System.Data.DataTable table) {
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal AccumulatedDepreciationGLAcctDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -312,30 +312,30 @@ namespace Asset {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected AssetCostGLACCTDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected AccumulatedDepreciationGLAcctDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn IdAssetCostGLACCTColumn {
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn IdAccumlatedDepGLAColumn {
                 get {
-                    return this.columnIdAssetCostGLACCT;
+                    return this.columnIdAccumlatedDepGLA;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn AssetCostGLACCTColumn {
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn AccumdDepGLAcctColumn {
                 get {
-                    return this.columnAssetCostGLACCT;
+                    return this.columnAccumdDepGLAcct;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public global::System.Data.DataColumn CommentColumn {
                 get {
                     return this.columnComment;
@@ -343,7 +343,7 @@ namespace Asset {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -352,160 +352,160 @@ namespace Asset {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public AssetCostGLACCTRow this[int index] {
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public AccumulatedDepreciationGLAcctRow this[int index] {
                 get {
-                    return ((AssetCostGLACCTRow)(this.Rows[index]));
+                    return ((AccumulatedDepreciationGLAcctRow)(this.Rows[index]));
                 }
             }
             
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event AssetCostGLACCTRowChangeEventHandler AssetCostGLACCTRowChanging;
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event AccumulatedDepreciationGLAcctRowChangeEventHandler AccumulatedDepreciationGLAcctRowChanging;
             
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event AssetCostGLACCTRowChangeEventHandler AssetCostGLACCTRowChanged;
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event AccumulatedDepreciationGLAcctRowChangeEventHandler AccumulatedDepreciationGLAcctRowChanged;
             
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event AssetCostGLACCTRowChangeEventHandler AssetCostGLACCTRowDeleting;
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event AccumulatedDepreciationGLAcctRowChangeEventHandler AccumulatedDepreciationGLAcctRowDeleting;
             
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event AssetCostGLACCTRowChangeEventHandler AssetCostGLACCTRowDeleted;
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event AccumulatedDepreciationGLAcctRowChangeEventHandler AccumulatedDepreciationGLAcctRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddAssetCostGLACCTRow(AssetCostGLACCTRow row) {
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddAccumulatedDepreciationGLAcctRow(AccumulatedDepreciationGLAcctRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public AssetCostGLACCTRow AddAssetCostGLACCTRow(string AssetCostGLACCT, string Comment) {
-                AssetCostGLACCTRow rowAssetCostGLACCTRow = ((AssetCostGLACCTRow)(this.NewRow()));
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public AccumulatedDepreciationGLAcctRow AddAccumulatedDepreciationGLAcctRow(string AccumdDepGLAcct, string Comment) {
+                AccumulatedDepreciationGLAcctRow rowAccumulatedDepreciationGLAcctRow = ((AccumulatedDepreciationGLAcctRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        AssetCostGLACCT,
+                        AccumdDepGLAcct,
                         Comment};
-                rowAssetCostGLACCTRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowAssetCostGLACCTRow);
-                return rowAssetCostGLACCTRow;
+                rowAccumulatedDepreciationGLAcctRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowAccumulatedDepreciationGLAcctRow);
+                return rowAccumulatedDepreciationGLAcctRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public AssetCostGLACCTRow FindByIdAssetCostGLACCT(int IdAssetCostGLACCT) {
-                return ((AssetCostGLACCTRow)(this.Rows.Find(new object[] {
-                            IdAssetCostGLACCT})));
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public AccumulatedDepreciationGLAcctRow FindByIdAccumlatedDepGLA(int IdAccumlatedDepGLA) {
+                return ((AccumulatedDepreciationGLAcctRow)(this.Rows.Find(new object[] {
+                            IdAccumlatedDepGLA})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                AssetCostGLACCTDataTable cln = ((AssetCostGLACCTDataTable)(base.Clone()));
+                AccumulatedDepreciationGLAcctDataTable cln = ((AccumulatedDepreciationGLAcctDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new AssetCostGLACCTDataTable();
+                return new AccumulatedDepreciationGLAcctDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnIdAssetCostGLACCT = base.Columns["IdAssetCostGLACCT"];
-                this.columnAssetCostGLACCT = base.Columns["AssetCostGLACCT"];
+                this.columnIdAccumlatedDepGLA = base.Columns["IdAccumlatedDepGLA"];
+                this.columnAccumdDepGLAcct = base.Columns["AccumdDepGLAcct"];
                 this.columnComment = base.Columns["Comment"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnIdAssetCostGLACCT = new global::System.Data.DataColumn("IdAssetCostGLACCT", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIdAssetCostGLACCT);
-                this.columnAssetCostGLACCT = new global::System.Data.DataColumn("AssetCostGLACCT", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAssetCostGLACCT);
+                this.columnIdAccumlatedDepGLA = new global::System.Data.DataColumn("IdAccumlatedDepGLA", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIdAccumlatedDepGLA);
+                this.columnAccumdDepGLAcct = new global::System.Data.DataColumn("AccumdDepGLAcct", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAccumdDepGLAcct);
                 this.columnComment = new global::System.Data.DataColumn("Comment", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnComment);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnIdAssetCostGLACCT}, true));
-                this.columnIdAssetCostGLACCT.AutoIncrement = true;
-                this.columnIdAssetCostGLACCT.AutoIncrementSeed = -1;
-                this.columnIdAssetCostGLACCT.AutoIncrementStep = -1;
-                this.columnIdAssetCostGLACCT.AllowDBNull = false;
-                this.columnIdAssetCostGLACCT.ReadOnly = true;
-                this.columnIdAssetCostGLACCT.Unique = true;
-                this.columnAssetCostGLACCT.MaxLength = 50;
-                this.columnComment.MaxLength = 50;
+                                this.columnIdAccumlatedDepGLA}, true));
+                this.columnIdAccumlatedDepGLA.AutoIncrement = true;
+                this.columnIdAccumlatedDepGLA.AutoIncrementSeed = -1;
+                this.columnIdAccumlatedDepGLA.AutoIncrementStep = -1;
+                this.columnIdAccumlatedDepGLA.AllowDBNull = false;
+                this.columnIdAccumlatedDepGLA.ReadOnly = true;
+                this.columnIdAccumlatedDepGLA.Unique = true;
+                this.columnAccumdDepGLAcct.MaxLength = 75;
+                this.columnComment.MaxLength = 100;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public AssetCostGLACCTRow NewAssetCostGLACCTRow() {
-                return ((AssetCostGLACCTRow)(this.NewRow()));
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public AccumulatedDepreciationGLAcctRow NewAccumulatedDepreciationGLAcctRow() {
+                return ((AccumulatedDepreciationGLAcctRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new AssetCostGLACCTRow(builder);
+                return new AccumulatedDepreciationGLAcctRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(AssetCostGLACCTRow);
+                return typeof(AccumulatedDepreciationGLAcctRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.AssetCostGLACCTRowChanged != null)) {
-                    this.AssetCostGLACCTRowChanged(this, new AssetCostGLACCTRowChangeEvent(((AssetCostGLACCTRow)(e.Row)), e.Action));
+                if ((this.AccumulatedDepreciationGLAcctRowChanged != null)) {
+                    this.AccumulatedDepreciationGLAcctRowChanged(this, new AccumulatedDepreciationGLAcctRowChangeEvent(((AccumulatedDepreciationGLAcctRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.AssetCostGLACCTRowChanging != null)) {
-                    this.AssetCostGLACCTRowChanging(this, new AssetCostGLACCTRowChangeEvent(((AssetCostGLACCTRow)(e.Row)), e.Action));
+                if ((this.AccumulatedDepreciationGLAcctRowChanging != null)) {
+                    this.AccumulatedDepreciationGLAcctRowChanging(this, new AccumulatedDepreciationGLAcctRowChangeEvent(((AccumulatedDepreciationGLAcctRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.AssetCostGLACCTRowDeleted != null)) {
-                    this.AssetCostGLACCTRowDeleted(this, new AssetCostGLACCTRowChangeEvent(((AssetCostGLACCTRow)(e.Row)), e.Action));
+                if ((this.AccumulatedDepreciationGLAcctRowDeleted != null)) {
+                    this.AccumulatedDepreciationGLAcctRowDeleted(this, new AccumulatedDepreciationGLAcctRowChangeEvent(((AccumulatedDepreciationGLAcctRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.AssetCostGLACCTRowDeleting != null)) {
-                    this.AssetCostGLACCTRowDeleting(this, new AssetCostGLACCTRowChangeEvent(((AssetCostGLACCTRow)(e.Row)), e.Action));
+                if ((this.AccumulatedDepreciationGLAcctRowDeleting != null)) {
+                    this.AccumulatedDepreciationGLAcctRowDeleting(this, new AccumulatedDepreciationGLAcctRowChangeEvent(((AccumulatedDepreciationGLAcctRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveAssetCostGLACCTRow(AssetCostGLACCTRow row) {
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemoveAccumulatedDepreciationGLAcctRow(AccumulatedDepreciationGLAcctRow row) {
                 this.Rows.Remove(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                AssetcontrolDataSet ds = new AssetcontrolDataSet();
+                AssetcontrolDataSet2 ds = new AssetcontrolDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -523,7 +523,7 @@ namespace Asset {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "AssetCostGLACCTDataTable";
+                attribute2.FixedValue = "AccumulatedDepreciationGLAcctDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -567,112 +567,114 @@ namespace Asset {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class AssetCostGLACCTRow : global::System.Data.DataRow {
+        public partial class AccumulatedDepreciationGLAcctRow : global::System.Data.DataRow {
             
-            private AssetCostGLACCTDataTable tableAssetCostGLACCT;
+            private AccumulatedDepreciationGLAcctDataTable tableAccumulatedDepreciationGLAcct;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal AssetCostGLACCTRow(global::System.Data.DataRowBuilder rb) : 
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal AccumulatedDepreciationGLAcctRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableAssetCostGLACCT = ((AssetCostGLACCTDataTable)(this.Table));
+                this.tableAccumulatedDepreciationGLAcct = ((AccumulatedDepreciationGLAcctDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int IdAssetCostGLACCT {
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int IdAccumlatedDepGLA {
                 get {
-                    return ((int)(this[this.tableAssetCostGLACCT.IdAssetCostGLACCTColumn]));
+                    return ((int)(this[this.tableAccumulatedDepreciationGLAcct.IdAccumlatedDepGLAColumn]));
                 }
                 set {
-                    this[this.tableAssetCostGLACCT.IdAssetCostGLACCTColumn] = value;
+                    this[this.tableAccumulatedDepreciationGLAcct.IdAccumlatedDepGLAColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string AssetCostGLACCT {
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string AccumdDepGLAcct {
                 get {
                     try {
-                        return ((string)(this[this.tableAssetCostGLACCT.AssetCostGLACCTColumn]));
+                        return ((string)(this[this.tableAccumulatedDepreciationGLAcct.AccumdDepGLAcctColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'AssetCostGLACCT\' in table \'AssetCostGLACCT\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'AccumdDepGLAcct\' in table \'AccumulatedDepreciationGLAcct\' i" +
+                                "s DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableAssetCostGLACCT.AssetCostGLACCTColumn] = value;
+                    this[this.tableAccumulatedDepreciationGLAcct.AccumdDepGLAcctColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string Comment {
                 get {
                     try {
-                        return ((string)(this[this.tableAssetCostGLACCT.CommentColumn]));
+                        return ((string)(this[this.tableAccumulatedDepreciationGLAcct.CommentColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Comment\' in table \'AssetCostGLACCT\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Comment\' in table \'AccumulatedDepreciationGLAcct\' is DBNull" +
+                                ".", e);
                     }
                 }
                 set {
-                    this[this.tableAssetCostGLACCT.CommentColumn] = value;
+                    this[this.tableAccumulatedDepreciationGLAcct.CommentColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsAssetCostGLACCTNull() {
-                return this.IsNull(this.tableAssetCostGLACCT.AssetCostGLACCTColumn);
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsAccumdDepGLAcctNull() {
+                return this.IsNull(this.tableAccumulatedDepreciationGLAcct.AccumdDepGLAcctColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetAssetCostGLACCTNull() {
-                this[this.tableAssetCostGLACCT.AssetCostGLACCTColumn] = global::System.Convert.DBNull;
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetAccumdDepGLAcctNull() {
+                this[this.tableAccumulatedDepreciationGLAcct.AccumdDepGLAcctColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsCommentNull() {
-                return this.IsNull(this.tableAssetCostGLACCT.CommentColumn);
+                return this.IsNull(this.tableAccumulatedDepreciationGLAcct.CommentColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetCommentNull() {
-                this[this.tableAssetCostGLACCT.CommentColumn] = global::System.Convert.DBNull;
+                this[this.tableAccumulatedDepreciationGLAcct.CommentColumn] = global::System.Convert.DBNull;
             }
         }
         
         /// <summary>
         ///Row event argument class
         ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class AssetCostGLACCTRowChangeEvent : global::System.EventArgs {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class AccumulatedDepreciationGLAcctRowChangeEvent : global::System.EventArgs {
             
-            private AssetCostGLACCTRow eventRow;
+            private AccumulatedDepreciationGLAcctRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public AssetCostGLACCTRowChangeEvent(AssetCostGLACCTRow row, global::System.Data.DataRowAction action) {
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public AccumulatedDepreciationGLAcctRowChangeEvent(AccumulatedDepreciationGLAcctRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public AssetCostGLACCTRow Row {
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public AccumulatedDepreciationGLAcctRow Row {
                 get {
                     return this.eventRow;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public global::System.Data.DataRowAction Action {
                 get {
                     return this.eventAction;
@@ -681,7 +683,7 @@ namespace Asset {
         }
     }
 }
-namespace Asset.AssetcontrolDataSetTableAdapters {
+namespace Asset.AssetcontrolDataSet2TableAdapters {
     
     
     /// <summary>
@@ -693,7 +695,7 @@ namespace Asset.AssetcontrolDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class AssetCostGLACCTTableAdapter : global::System.ComponentModel.Component {
+    public partial class AccumulatedDepreciationGLAcctTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -706,13 +708,13 @@ namespace Asset.AssetcontrolDataSetTableAdapters {
         private bool _clearBeforeFill;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public AssetCostGLACCTTableAdapter() {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public AccumulatedDepreciationGLAcctTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
             get {
                 if ((this._adapter == null)) {
@@ -723,7 +725,7 @@ namespace Asset.AssetcontrolDataSetTableAdapters {
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal global::System.Data.SqlClient.SqlConnection Connection {
             get {
                 if ((this._connection == null)) {
@@ -751,7 +753,7 @@ namespace Asset.AssetcontrolDataSetTableAdapters {
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal global::System.Data.SqlClient.SqlTransaction Transaction {
             get {
                 return this._transaction;
@@ -777,7 +779,7 @@ namespace Asset.AssetcontrolDataSetTableAdapters {
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
             get {
                 if ((this._commandCollection == null)) {
@@ -788,7 +790,7 @@ namespace Asset.AssetcontrolDataSetTableAdapters {
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public bool ClearBeforeFill {
             get {
                 return this._clearBeforeFill;
@@ -799,70 +801,72 @@ namespace Asset.AssetcontrolDataSetTableAdapters {
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitAdapter() {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "AssetCostGLACCT";
-            tableMapping.ColumnMappings.Add("IdAssetCostGLACCT", "IdAssetCostGLACCT");
-            tableMapping.ColumnMappings.Add("AssetCostGLACCT", "AssetCostGLACCT");
+            tableMapping.DataSetTable = "AccumulatedDepreciationGLAcct";
+            tableMapping.ColumnMappings.Add("IdAccumlatedDepGLA", "IdAccumlatedDepGLA");
+            tableMapping.ColumnMappings.Add("AccumdDepGLAcct", "AccumdDepGLAcct");
             tableMapping.ColumnMappings.Add("Comment", "Comment");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[AssetCostGLACCT] WHERE (([IdAssetCostGLACCT] = @Original_IdAssetCostGLACCT) AND ((@IsNull_AssetCostGLACCT = 1 AND [AssetCostGLACCT] IS NULL) OR ([AssetCostGLACCT] = @Original_AssetCostGLACCT)) AND ((@IsNull_Comment = 1 AND [Comment] IS NULL) OR ([Comment] = @Original_Comment)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[AccumulatedDepreciationGLAcct] WHERE (([IdAccumlatedDepGLA] = @Original_IdAccumlatedDepGLA) AND ((@IsNull_AccumdDepGLAcct = 1 AND [AccumdDepGLAcct] IS NULL) OR ([AccumdDepGLAcct] = @Original_AccumdDepGLAcct)) AND ((@IsNull_Comment = 1 AND [Comment] IS NULL) OR ([Comment] = @Original_Comment)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdAssetCostGLACCT", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdAssetCostGLACCT", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AssetCostGLACCT", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AssetCostGLACCT", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AssetCostGLACCT", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AssetCostGLACCT", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdAccumlatedDepGLA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdAccumlatedDepGLA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AccumdDepGLAcct", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AccumdDepGLAcct", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AccumdDepGLAcct", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AccumdDepGLAcct", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Comment", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Comment", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Comment", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Comment", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[AssetCostGLACCT] ([AssetCostGLACCT], [Comment]) VALUES (@Asset" +
-                "CostGLACCT, @Comment);\r\nSELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM " +
-                "AssetCostGLACCT WHERE (IdAssetCostGLACCT = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[AccumulatedDepreciationGLAcct] ([AccumdDepGLAcct], [Comment]) " +
+                "VALUES (@AccumdDepGLAcct, @Comment);\r\nSELECT IdAccumlatedDepGLA, AccumdDepGLAcct" +
+                ", Comment FROM AccumulatedDepreciationGLAcct WHERE (IdAccumlatedDepGLA = SCOPE_I" +
+                "DENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AssetCostGLACCT", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AssetCostGLACCT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AccumdDepGLAcct", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AccumdDepGLAcct", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Comment", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Comment", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[AssetCostGLACCT] SET [AssetCostGLACCT] = @AssetCostGLACCT, [Comment] = @Comment WHERE (([IdAssetCostGLACCT] = @Original_IdAssetCostGLACCT) AND ((@IsNull_AssetCostGLACCT = 1 AND [AssetCostGLACCT] IS NULL) OR ([AssetCostGLACCT] = @Original_AssetCostGLACCT)) AND ((@IsNull_Comment = 1 AND [Comment] IS NULL) OR ([Comment] = @Original_Comment)));
-SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (IdAssetCostGLACCT = @IdAssetCostGLACCT)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[AccumulatedDepreciationGLAcct] SET [AccumdDepGLAcct] = @AccumdDepGLAcct, [Comment] = @Comment WHERE (([IdAccumlatedDepGLA] = @Original_IdAccumlatedDepGLA) AND ((@IsNull_AccumdDepGLAcct = 1 AND [AccumdDepGLAcct] IS NULL) OR ([AccumdDepGLAcct] = @Original_AccumdDepGLAcct)) AND ((@IsNull_Comment = 1 AND [Comment] IS NULL) OR ([Comment] = @Original_Comment)));
+SELECT IdAccumlatedDepGLA, AccumdDepGLAcct, Comment FROM AccumulatedDepreciationGLAcct WHERE (IdAccumlatedDepGLA = @IdAccumlatedDepGLA)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AssetCostGLACCT", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AssetCostGLACCT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AccumdDepGLAcct", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AccumdDepGLAcct", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Comment", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Comment", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdAssetCostGLACCT", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdAssetCostGLACCT", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AssetCostGLACCT", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AssetCostGLACCT", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AssetCostGLACCT", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AssetCostGLACCT", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdAccumlatedDepGLA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IdAccumlatedDepGLA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AccumdDepGLAcct", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AccumdDepGLAcct", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AccumdDepGLAcct", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AccumdDepGLAcct", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Comment", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Comment", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Comment", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Comment", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdAssetCostGLACCT", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "IdAssetCostGLACCT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdAccumlatedDepGLA", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "IdAccumlatedDepGLA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
             this._connection.ConnectionString = global::Asset.Properties.Settings.Default.AssetcontrolConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM dbo.AssetCostGLACCT";
+            this._commandCollection[0].CommandText = "SELECT IdAccumlatedDepGLA, AccumdDepGLAcct, Comment FROM dbo.AccumulatedDepreciat" +
+                "ionGLAcct";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(AssetcontrolDataSet.AssetCostGLACCTDataTable dataTable) {
+        public virtual int Fill(AssetcontrolDataSet2.AccumulatedDepreciationGLAcctDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -872,32 +876,32 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual AssetcontrolDataSet.AssetCostGLACCTDataTable GetData() {
+        public virtual AssetcontrolDataSet2.AccumulatedDepreciationGLAcctDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            AssetcontrolDataSet.AssetCostGLACCTDataTable dataTable = new AssetcontrolDataSet.AssetCostGLACCTDataTable();
+            AssetcontrolDataSet2.AccumulatedDepreciationGLAcctDataTable dataTable = new AssetcontrolDataSet2.AccumulatedDepreciationGLAcctDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(AssetcontrolDataSet.AssetCostGLACCTDataTable dataTable) {
+        public virtual int Update(AssetcontrolDataSet2.AccumulatedDepreciationGLAcctDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(AssetcontrolDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "AssetCostGLACCT");
+        public virtual int Update(AssetcontrolDataSet2 dataSet) {
+            return this.Adapter.Update(dataSet, "AccumulatedDepreciationGLAcct");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(global::System.Data.DataRow dataRow) {
             return this.Adapter.Update(new global::System.Data.DataRow[] {
@@ -905,25 +909,25 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(global::System.Data.DataRow[] dataRows) {
             return this.Adapter.Update(dataRows);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_IdAssetCostGLACCT, string Original_AssetCostGLACCT, string Original_Comment) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_IdAssetCostGLACCT));
-            if ((Original_AssetCostGLACCT == null)) {
+        public virtual int Delete(int Original_IdAccumlatedDepGLA, string Original_AccumdDepGLAcct, string Original_Comment) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_IdAccumlatedDepGLA));
+            if ((Original_AccumdDepGLAcct == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_AssetCostGLACCT));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_AccumdDepGLAcct));
             }
             if ((Original_Comment == null)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
@@ -950,15 +954,15 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string AssetCostGLACCT, string Comment) {
-            if ((AssetCostGLACCT == null)) {
+        public virtual int Insert(string AccumdDepGLAcct, string Comment) {
+            if ((AccumdDepGLAcct == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(AssetCostGLACCT));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(AccumdDepGLAcct));
             }
             if ((Comment == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -983,15 +987,15 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string AssetCostGLACCT, string Comment, int Original_IdAssetCostGLACCT, string Original_AssetCostGLACCT, string Original_Comment, int IdAssetCostGLACCT) {
-            if ((AssetCostGLACCT == null)) {
+        public virtual int Update(string AccumdDepGLAcct, string Comment, int Original_IdAccumlatedDepGLA, string Original_AccumdDepGLAcct, string Original_Comment, int IdAccumlatedDepGLA) {
+            if ((AccumdDepGLAcct == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(AssetCostGLACCT));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(AccumdDepGLAcct));
             }
             if ((Comment == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -999,14 +1003,14 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Comment));
             }
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Original_IdAssetCostGLACCT));
-            if ((Original_AssetCostGLACCT == null)) {
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Original_IdAccumlatedDepGLA));
+            if ((Original_AccumdDepGLAcct == null)) {
                 this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_AssetCostGLACCT));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_AccumdDepGLAcct));
             }
             if ((Original_Comment == null)) {
                 this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(1));
@@ -1016,7 +1020,7 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
                 this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_Comment));
             }
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(IdAssetCostGLACCT));
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(IdAccumlatedDepGLA));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1034,11 +1038,11 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string AssetCostGLACCT, string Comment, int Original_IdAssetCostGLACCT, string Original_AssetCostGLACCT, string Original_Comment) {
-            return this.Update(AssetCostGLACCT, Comment, Original_IdAssetCostGLACCT, Original_AssetCostGLACCT, Original_Comment, Original_IdAssetCostGLACCT);
+        public virtual int Update(string AccumdDepGLAcct, string Comment, int Original_IdAccumlatedDepGLA, string Original_AccumdDepGLAcct, string Original_Comment) {
+            return this.Update(AccumdDepGLAcct, Comment, Original_IdAccumlatedDepGLA, Original_AccumdDepGLAcct, Original_Comment, Original_IdAccumlatedDepGLA);
         }
     }
     
@@ -1054,14 +1058,14 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
         
         private UpdateOrderOption _updateOrder;
         
-        private AssetCostGLACCTTableAdapter _assetCostGLACCTTableAdapter;
+        private AccumulatedDepreciationGLAcctTableAdapter _accumulatedDepreciationGLAcctTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public UpdateOrderOption UpdateOrder {
             get {
                 return this._updateOrder;
@@ -1072,21 +1076,21 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public AssetCostGLACCTTableAdapter AssetCostGLACCTTableAdapter {
+        public AccumulatedDepreciationGLAcctTableAdapter AccumulatedDepreciationGLAcctTableAdapter {
             get {
-                return this._assetCostGLACCTTableAdapter;
+                return this._accumulatedDepreciationGLAcctTableAdapter;
             }
             set {
-                this._assetCostGLACCTTableAdapter = value;
+                this._accumulatedDepreciationGLAcctTableAdapter = value;
             }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public bool BackupDataSetBeforeUpdate {
             get {
                 return this._backupDataSetBeforeUpdate;
@@ -1097,16 +1101,16 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         public global::System.Data.IDbConnection Connection {
             get {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._assetCostGLACCTTableAdapter != null) 
-                            && (this._assetCostGLACCTTableAdapter.Connection != null))) {
-                    return this._assetCostGLACCTTableAdapter.Connection;
+                if (((this._accumulatedDepreciationGLAcctTableAdapter != null) 
+                            && (this._accumulatedDepreciationGLAcctTableAdapter.Connection != null))) {
+                    return this._accumulatedDepreciationGLAcctTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1116,12 +1120,12 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._assetCostGLACCTTableAdapter != null)) {
+                if ((this._accumulatedDepreciationGLAcctTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1132,15 +1136,15 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
         ///Update rows in top-down order.
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(AssetcontrolDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private int UpdateUpdatedRows(AssetcontrolDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._assetCostGLACCTTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.AssetCostGLACCT.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._accumulatedDepreciationGLAcctTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.AccumulatedDepreciationGLAcct.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._assetCostGLACCTTableAdapter.Update(updatedRows));
+                    result = (result + this._accumulatedDepreciationGLAcctTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1151,14 +1155,14 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
         ///Insert rows in top-down order.
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(AssetcontrolDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private int UpdateInsertedRows(AssetcontrolDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._assetCostGLACCTTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.AssetCostGLACCT.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._accumulatedDepreciationGLAcctTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.AccumulatedDepreciationGLAcct.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._assetCostGLACCTTableAdapter.Update(addedRows));
+                    result = (result + this._accumulatedDepreciationGLAcctTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1169,14 +1173,14 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
         ///Delete rows in bottom-up order.
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(AssetcontrolDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private int UpdateDeletedRows(AssetcontrolDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._assetCostGLACCTTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.AssetCostGLACCT.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._accumulatedDepreciationGLAcctTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.AccumulatedDepreciationGLAcct.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._assetCostGLACCTTableAdapter.Update(deletedRows));
+                    result = (result + this._accumulatedDepreciationGLAcctTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1187,7 +1191,7 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
         ///Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private global::System.Data.DataRow[] GetRealUpdatedRows(global::System.Data.DataRow[] updatedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             if (((updatedRows == null) 
                         || (updatedRows.Length < 1))) {
@@ -1211,16 +1215,16 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
         ///Update all changes to the dataset.
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(AssetcontrolDataSet dataSet) {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public virtual int UpdateAll(AssetcontrolDataSet2 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._assetCostGLACCTTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._assetCostGLACCTTableAdapter.Connection) == false))) {
+            if (((this._accumulatedDepreciationGLAcctTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._accumulatedDepreciationGLAcctTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1256,13 +1260,13 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._assetCostGLACCTTableAdapter != null)) {
-                    revertConnections.Add(this._assetCostGLACCTTableAdapter, this._assetCostGLACCTTableAdapter.Connection);
-                    this._assetCostGLACCTTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._assetCostGLACCTTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._assetCostGLACCTTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._assetCostGLACCTTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._assetCostGLACCTTableAdapter.Adapter);
+                if ((this._accumulatedDepreciationGLAcctTableAdapter != null)) {
+                    revertConnections.Add(this._accumulatedDepreciationGLAcctTableAdapter, this._accumulatedDepreciationGLAcctTableAdapter.Connection);
+                    this._accumulatedDepreciationGLAcctTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._accumulatedDepreciationGLAcctTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._accumulatedDepreciationGLAcctTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._accumulatedDepreciationGLAcctTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._accumulatedDepreciationGLAcctTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1323,9 +1327,9 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._assetCostGLACCTTableAdapter != null)) {
-                    this._assetCostGLACCTTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._assetCostGLACCTTableAdapter]));
-                    this._assetCostGLACCTTableAdapter.Transaction = null;
+                if ((this._accumulatedDepreciationGLAcctTableAdapter != null)) {
+                    this._accumulatedDepreciationGLAcctTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._accumulatedDepreciationGLAcctTableAdapter]));
+                    this._accumulatedDepreciationGLAcctTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
@@ -1340,13 +1344,13 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         protected virtual void SortSelfReferenceRows(global::System.Data.DataRow[] rows, global::System.Data.DataRelation relation, bool childFirst) {
             global::System.Array.Sort<global::System.Data.DataRow>(rows, new SelfReferenceComparer(relation, childFirst));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         protected virtual bool MatchTableAdapterConnection(global::System.Data.IDbConnection inputConnection) {
             if ((this._connection != null)) {
                 return true;
@@ -1364,7 +1368,7 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
         /// <summary>
         ///Update Order Option
         ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public enum UpdateOrderOption {
             
             InsertUpdateDelete = 0,
@@ -1375,7 +1379,7 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
         /// <summary>
         ///Used to sort self-referenced table's rows
         ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private class SelfReferenceComparer : object, global::System.Collections.Generic.IComparer<global::System.Data.DataRow> {
             
             private global::System.Data.DataRelation _relation;
@@ -1383,7 +1387,7 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
             private int _childFirst;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal SelfReferenceComparer(global::System.Data.DataRelation relation, bool childFirst) {
                 this._relation = relation;
                 if (childFirst) {
@@ -1395,7 +1399,7 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private global::System.Data.DataRow GetRoot(global::System.Data.DataRow row, out int distance) {
                 global::System.Diagnostics.Debug.Assert((row != null));
                 global::System.Data.DataRow root = row;
@@ -1434,7 +1438,7 @@ SELECT IdAssetCostGLACCT, AssetCostGLACCT, Comment FROM AssetCostGLACCT WHERE (I
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int Compare(global::System.Data.DataRow row1, global::System.Data.DataRow row2) {
                 if (object.ReferenceEquals(row1, row2)) {
                     return 0;

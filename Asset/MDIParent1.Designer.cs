@@ -135,7 +135,7 @@ namespace Asset
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(162, 38);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.ShowNewForm);
             // 
@@ -556,13 +556,14 @@ namespace Asset
             this.btnimportexport.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnimportexport.Image = ((System.Drawing.Image)(resources.GetObject("btnimportexport.Image")));
             this.btnimportexport.Location = new System.Drawing.Point(155, 78);
-            this.btnimportexport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnimportexport.Margin = new System.Windows.Forms.Padding(2);
             this.btnimportexport.Name = "btnimportexport";
             this.btnimportexport.Size = new System.Drawing.Size(146, 179);
             this.btnimportexport.TabIndex = 5;
             this.btnimportexport.Text = "ImportExport";
             this.btnimportexport.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnimportexport.UseVisualStyleBackColor = true;
+            this.btnimportexport.Click += new System.EventHandler(this.btnimportexport_Click);
             // 
             // btncontabilidad
             // 
