@@ -121,5 +121,11 @@ namespace Asset
             frmimportexport frmimportexport = new frmimportexport();
             frmimportexport.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            mantenimientoCatalago mantenimientoCatalago = new mantenimientoCatalago();
+            mantenimientoCatalago.ShowDialog();
+        }
     }
 }

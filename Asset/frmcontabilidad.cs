@@ -79,9 +79,10 @@ namespace Asset
                         command.Parameters.AddWithValue("@status", checkBox1.Checked ? 1 : 0);
                         // Ejecutar la consulta
                         command.ExecuteNonQuery();
-                        }
+                        this.accountingVTableAdapter1.Fill(this.assetcontrolDataSet9.AccountingV);
+                    }
 
-                        MessageBox.Show("Registro guardado correctamente.");
+                    MessageBox.Show("Registro guardado correctamente.");
                     }
                 }
                 catch (Exception ex)

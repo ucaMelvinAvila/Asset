@@ -37,9 +37,9 @@ namespace Asset
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtpo = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txttagnumber = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.AccountingTag = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.purchaseOrderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,11 +51,11 @@ namespace Asset
             this.purchasingVBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.assetcontrolDataSet6 = new Asset.AssetcontrolDataSet6();
             this.button2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbproveedor = new System.Windows.Forms.ComboBox();
             this.supplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.assetcontrolDataSet5 = new Asset.AssetcontrolDataSet5();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtdescripcion = new System.Windows.Forms.TextBox();
             this.purchasing_VTableAdapter = new Asset.AssetcontrolDataSet6TableAdapters.Purchasing_VTableAdapter();
             this.supplierTableAdapter = new Asset.AssetcontrolDataSet5TableAdapters.SupplierTableAdapter();
             this.purchasingVTableAdapter = new Asset.AssetcontrolDataSet7TableAdapters.PurchasingVTableAdapter();
@@ -98,16 +98,16 @@ namespace Asset
             this.label3.TabIndex = 2;
             this.label3.Text = "Nombre del Proveedor";
             // 
-            // textBox1
+            // txtpo
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtpo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(211, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 22);
-            this.textBox1.TabIndex = 3;
+            this.txtpo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpo.Location = new System.Drawing.Point(211, 27);
+            this.txtpo.Name = "txtpo";
+            this.txtpo.Size = new System.Drawing.Size(231, 22);
+            this.txtpo.TabIndex = 3;
             // 
             // textBox2
             // 
@@ -121,16 +121,16 @@ namespace Asset
             this.textBox2.Size = new System.Drawing.Size(771, 0);
             this.textBox2.TabIndex = 4;
             // 
-            // textBox3
+            // txttagnumber
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txttagnumber.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(211, 151);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(446, 22);
-            this.textBox3.TabIndex = 5;
+            this.txttagnumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttagnumber.Location = new System.Drawing.Point(211, 151);
+            this.txttagnumber.Name = "txttagnumber";
+            this.txttagnumber.Size = new System.Drawing.Size(446, 22);
+            this.txttagnumber.TabIndex = 5;
             // 
             // dataGridView2
             // 
@@ -211,25 +211,29 @@ namespace Asset
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(699, 159);
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button2.Location = new System.Drawing.Point(699, 171);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 48);
+            this.button2.Size = new System.Drawing.Size(83, 69);
             this.button2.TabIndex = 8;
+            this.button2.Text = "Guardar";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // comboBox1
+            // cmbproveedor
             // 
-            this.comboBox1.DataSource = this.supplierBindingSource;
-            this.comboBox1.DisplayMember = "supplierName";
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(211, 183);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(388, 24);
-            this.comboBox1.TabIndex = 9;
-            this.comboBox1.ValueMember = "Id_Supplier";
+            this.cmbproveedor.DataSource = this.supplierBindingSource;
+            this.cmbproveedor.DisplayMember = "supplierName";
+            this.cmbproveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbproveedor.FormattingEnabled = true;
+            this.cmbproveedor.Location = new System.Drawing.Point(211, 183);
+            this.cmbproveedor.Name = "cmbproveedor";
+            this.cmbproveedor.Size = new System.Drawing.Size(388, 24);
+            this.cmbproveedor.TabIndex = 9;
+            this.cmbproveedor.ValueMember = "Id_Supplier";
             // 
             // supplierBindingSource
             // 
@@ -251,17 +255,17 @@ namespace Asset
             this.label25.TabIndex = 19;
             this.label25.Text = "Asset ID (TAG No.)";
             // 
-            // textBox4
+            // txtdescripcion
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtdescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(211, 64);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(352, 74);
-            this.textBox4.TabIndex = 3;
+            this.txtdescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdescripcion.Location = new System.Drawing.Point(211, 64);
+            this.txtdescripcion.Multiline = true;
+            this.txtdescripcion.Name = "txtdescripcion";
+            this.txtdescripcion.Size = new System.Drawing.Size(352, 74);
+            this.txtdescripcion.TabIndex = 3;
             // 
             // purchasing_VTableAdapter
             // 
@@ -281,13 +285,13 @@ namespace Asset
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1287, 590);
             this.Controls.Add(this.label25);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbproveedor);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txttagnumber);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtdescripcion);
+            this.Controls.Add(this.txtpo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -332,13 +336,13 @@ namespace Asset
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtpo;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txttagnumber;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbproveedor;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtdescripcion;
         private AssetcontrolDataSet6 assetcontrolDataSet6;
         private System.Windows.Forms.BindingSource purchasingVBindingSource;
         private AssetcontrolDataSet6TableAdapters.Purchasing_VTableAdapter purchasing_VTableAdapter;

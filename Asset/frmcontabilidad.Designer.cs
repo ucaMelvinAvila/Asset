@@ -122,11 +122,12 @@ namespace Asset
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.assetcontrolDataSet10 = new Asset.AssetcontrolDataSet10();
             this.responsibleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.assetcontrolDataSet10 = new Asset.AssetcontrolDataSet10();
             this.responsibleTableAdapter = new Asset.AssetcontrolDataSet10TableAdapters.ResponsibleTableAdapter();
             this.label42 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.newTagNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.assetCostGLACCTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -135,7 +136,6 @@ namespace Asset
             this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.responsibleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplierDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.assetcontrolDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.assetCostGLACCTBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projectsBindingSource)).BeginInit();
@@ -154,8 +154,8 @@ namespace Asset
             ((System.ComponentModel.ISupportInitialize)(this.assetcontrolDataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accountingVBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.assetcontrolDataSet10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.responsibleBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assetcontrolDataSet10)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -786,6 +786,7 @@ namespace Asset
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -961,15 +962,15 @@ namespace Asset
             this.comboBox6.TabIndex = 19;
             this.comboBox6.ValueMember = "IdAssetResponsible";
             // 
-            // assetcontrolDataSet10
-            // 
-            this.assetcontrolDataSet10.DataSetName = "AssetcontrolDataSet10";
-            this.assetcontrolDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // responsibleBindingSource
             // 
             this.responsibleBindingSource.DataMember = "Responsible";
             this.responsibleBindingSource.DataSource = this.assetcontrolDataSet10;
+            // 
+            // assetcontrolDataSet10
+            // 
+            this.assetcontrolDataSet10.DataSetName = "AssetcontrolDataSet10";
+            this.assetcontrolDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // responsibleTableAdapter
             // 
@@ -992,6 +993,16 @@ namespace Asset
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(299, 22);
             this.textBox14.TabIndex = 20;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(520, 254);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(120, 24);
+            this.checkBox1.TabIndex = 26;
+            this.checkBox1.Text = "Asset Status";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // newTagNoDataGridViewTextBoxColumn
             // 
@@ -1051,16 +1062,6 @@ namespace Asset
             this.supplierDataGridViewTextBoxColumn.FillWeight = 105.0036F;
             this.supplierDataGridViewTextBoxColumn.HeaderText = "Supplier";
             this.supplierDataGridViewTextBoxColumn.Name = "supplierDataGridViewTextBoxColumn";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(520, 254);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(120, 24);
-            this.checkBox1.TabIndex = 26;
-            this.checkBox1.Text = "Asset Status";
-            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // frmcontabilidad
             // 
@@ -1162,8 +1163,8 @@ namespace Asset
             ((System.ComponentModel.ISupportInitialize)(this.assetcontrolDataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accountingVBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.assetcontrolDataSet10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.responsibleBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assetcontrolDataSet10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1268,6 +1269,7 @@ namespace Asset
         private AssetcontrolDataSet10TableAdapters.ResponsibleTableAdapter responsibleTableAdapter;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn newTagNoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn assetCostGLACCTDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
@@ -1276,6 +1278,5 @@ namespace Asset
         private System.Windows.Forms.DataGridViewTextBoxColumn costDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn responsibleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn supplierDataGridViewTextBoxColumn;
-        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
