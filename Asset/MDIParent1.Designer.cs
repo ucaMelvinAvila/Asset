@@ -31,6 +31,9 @@ namespace Asset
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MDIParent1));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -88,9 +91,11 @@ namespace Asset
             this.btncontabilidad = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip
@@ -106,7 +111,7 @@ namespace Asset
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.MdiWindowListItem = this.windowsMenu;
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(822, 24);
+            this.menuStrip.Size = new System.Drawing.Size(1389, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -135,7 +140,7 @@ namespace Asset
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.ShowNewForm);
             // 
@@ -449,7 +454,7 @@ namespace Asset
             this.helpToolStripButton});
             this.toolStrip.Location = new System.Drawing.Point(0, 24);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(822, 39);
+            this.toolStrip.Size = new System.Drawing.Size(1389, 39);
             this.toolStrip.TabIndex = 1;
             this.toolStrip.Text = "ToolStrip";
             // 
@@ -524,9 +529,9 @@ namespace Asset
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 465);
+            this.statusStrip.Location = new System.Drawing.Point(0, 741);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(822, 22);
+            this.statusStrip.Size = new System.Drawing.Size(1389, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -538,13 +543,14 @@ namespace Asset
             // 
             // btncompras
             // 
+            this.btncompras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncompras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncompras.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btncompras.Image = ((System.Drawing.Image)(resources.GetObject("btncompras.Image")));
             this.btncompras.Location = new System.Drawing.Point(12, 78);
             this.btncompras.Name = "btncompras";
             this.btncompras.Size = new System.Drawing.Size(138, 179);
-            this.btncompras.TabIndex = 4;
+            this.btncompras.TabIndex = 1;
             this.btncompras.Text = "Compras";
             this.btncompras.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btncompras.UseVisualStyleBackColor = true;
@@ -552,6 +558,7 @@ namespace Asset
             // 
             // btnimportexport
             // 
+            this.btnimportexport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnimportexport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnimportexport.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnimportexport.Image = ((System.Drawing.Image)(resources.GetObject("btnimportexport.Image")));
@@ -559,7 +566,7 @@ namespace Asset
             this.btnimportexport.Margin = new System.Windows.Forms.Padding(2);
             this.btnimportexport.Name = "btnimportexport";
             this.btnimportexport.Size = new System.Drawing.Size(146, 179);
-            this.btnimportexport.TabIndex = 5;
+            this.btnimportexport.TabIndex = 2;
             this.btnimportexport.Text = "ImportExport";
             this.btnimportexport.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnimportexport.UseVisualStyleBackColor = true;
@@ -567,13 +574,14 @@ namespace Asset
             // 
             // btncontabilidad
             // 
+            this.btncontabilidad.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncontabilidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncontabilidad.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btncontabilidad.Image = ((System.Drawing.Image)(resources.GetObject("btncontabilidad.Image")));
             this.btncontabilidad.Location = new System.Drawing.Point(306, 78);
             this.btncontabilidad.Name = "btncontabilidad";
             this.btncontabilidad.Size = new System.Drawing.Size(144, 179);
-            this.btncontabilidad.TabIndex = 6;
+            this.btncontabilidad.TabIndex = 3;
             this.btncontabilidad.Text = "Contabilidad";
             this.btncontabilidad.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btncontabilidad.UseVisualStyleBackColor = true;
@@ -581,14 +589,14 @@ namespace Asset
             // 
             // button1
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(456, 78);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(166, 179);
-            this.button1.TabIndex = 8;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Administracion de Catalogos";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = true;
@@ -596,22 +604,46 @@ namespace Asset
             // 
             // button2
             // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.Location = new System.Drawing.Point(628, 78);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(167, 179);
-            this.button2.TabIndex = 9;
+            this.button2.TabIndex = 5;
             this.button2.Text = "Reportes";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = true;
+            // 
+            // chart1
+            // 
+            this.chart1.AllowDrop = true;
+            this.chart1.BackColor = System.Drawing.Color.Gainsboro;
+            chartArea2.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(12, 277);
+            this.chart1.Name = "chart1";
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series2.Legend = "Legend1";
+            series2.Name = "Total Cost by Responsible";
+            series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(783, 428);
+            this.chart1.TabIndex = 11;
+            this.chart1.Text = "chart1";
             // 
             // MDIParent1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(822, 487);
+            this.ClientSize = new System.Drawing.Size(1389, 763);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btncontabilidad);
@@ -620,6 +652,7 @@ namespace Asset
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.menuStrip);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
@@ -633,6 +666,7 @@ namespace Asset
             this.toolStrip.PerformLayout();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -697,6 +731,7 @@ namespace Asset
         private System.Windows.Forms.Button btncontabilidad;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }
 

@@ -102,6 +102,14 @@ namespace Asset
             this.button4 = new System.Windows.Forms.Button();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.newTagNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.assetCostGLACCTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.assetTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateAcquiredDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.responsibleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supplierDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.accountingVBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.assetcontrolDataSet9 = new Asset.AssetcontrolDataSet9();
             this.assetcontrolDataSet8 = new Asset.AssetcontrolDataSet8();
@@ -128,14 +136,6 @@ namespace Asset
             this.label42 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.newTagNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.assetCostGLACCTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.assetTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateAcquiredDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.responsibleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supplierDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.assetcontrolDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.assetCostGLACCTBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projectsBindingSource)).BeginInit();
@@ -530,7 +530,7 @@ namespace Asset
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(922, 210);
+            this.label27.Location = new System.Drawing.Point(878, 210);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(65, 16);
             this.label27.TabIndex = 18;
@@ -540,7 +540,7 @@ namespace Asset
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(922, 22);
+            this.label28.Location = new System.Drawing.Point(878, 22);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(94, 16);
             this.label28.TabIndex = 18;
@@ -550,7 +550,7 @@ namespace Asset
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(922, 96);
+            this.label30.Location = new System.Drawing.Point(878, 96);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(29, 16);
             this.label30.TabIndex = 18;
@@ -582,7 +582,7 @@ namespace Asset
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(922, 137);
+            this.label32.Location = new System.Drawing.Point(878, 137);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(35, 16);
             this.label32.TabIndex = 18;
@@ -592,7 +592,7 @@ namespace Asset
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(922, 60);
+            this.label29.Location = new System.Drawing.Point(878, 60);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(113, 16);
             this.label29.TabIndex = 18;
@@ -625,7 +625,7 @@ namespace Asset
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(1063, 210);
+            this.textBox4.Location = new System.Drawing.Point(1019, 210);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(262, 85);
@@ -634,7 +634,7 @@ namespace Asset
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(1063, 93);
+            this.textBox5.Location = new System.Drawing.Point(1019, 93);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(117, 22);
             this.textBox5.TabIndex = 20;
@@ -642,7 +642,7 @@ namespace Asset
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(1063, 131);
+            this.textBox6.Location = new System.Drawing.Point(1019, 131);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(117, 22);
             this.textBox6.TabIndex = 20;
@@ -650,7 +650,7 @@ namespace Asset
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(1063, 167);
+            this.textBox7.Location = new System.Drawing.Point(1019, 167);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(117, 22);
             this.textBox7.TabIndex = 20;
@@ -658,7 +658,7 @@ namespace Asset
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(1063, 19);
+            this.dateTimePicker1.Location = new System.Drawing.Point(1019, 19);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(262, 22);
             this.dateTimePicker1.TabIndex = 22;
@@ -666,7 +666,7 @@ namespace Asset
             // dateTimePicker2
             // 
             this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(1063, 55);
+            this.dateTimePicker2.Location = new System.Drawing.Point(1019, 55);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(262, 22);
             this.dateTimePicker2.TabIndex = 22;
@@ -675,7 +675,7 @@ namespace Asset
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(922, 173);
+            this.label33.Location = new System.Drawing.Point(878, 173);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(120, 16);
             this.label33.TabIndex = 18;
@@ -684,7 +684,7 @@ namespace Asset
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(1024, 131);
+            this.label34.Location = new System.Drawing.Point(980, 131);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(18, 20);
             this.label34.TabIndex = 18;
@@ -693,7 +693,7 @@ namespace Asset
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(1039, 169);
+            this.label35.Location = new System.Drawing.Point(995, 169);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(18, 20);
             this.label35.TabIndex = 18;
@@ -804,205 +804,8 @@ namespace Asset
             this.dataGridView1.DataSource = this.accountingVBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(12, 314);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1378, 206);
+            this.dataGridView1.Size = new System.Drawing.Size(1269, 206);
             this.dataGridView1.TabIndex = 24;
-            // 
-            // accountingVBindingSource1
-            // 
-            this.accountingVBindingSource1.DataMember = "AccountingV";
-            this.accountingVBindingSource1.DataSource = this.assetcontrolDataSet9;
-            // 
-            // assetcontrolDataSet9
-            // 
-            this.assetcontrolDataSet9.DataSetName = "AssetcontrolDataSet9";
-            this.assetcontrolDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // assetcontrolDataSet8
-            // 
-            this.assetcontrolDataSet8.DataSetName = "AssetcontrolDataSet8";
-            this.assetcontrolDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // accountingVBindingSource
-            // 
-            this.accountingVBindingSource.DataMember = "AccountingV";
-            this.accountingVBindingSource.DataSource = this.assetcontrolDataSet8;
-            // 
-            // accountingVTableAdapter
-            // 
-            this.accountingVTableAdapter.ClearBeforeFill = true;
-            // 
-            // accountingVTableAdapter1
-            // 
-            this.accountingVTableAdapter1.ClearBeforeFill = true;
-            // 
-            // idaccountingrecodDataGridViewTextBoxColumn
-            // 
-            this.idaccountingrecodDataGridViewTextBoxColumn.DataPropertyName = "Record";
-            this.idaccountingrecodDataGridViewTextBoxColumn.HeaderText = "Idaccountingrecod";
-            this.idaccountingrecodDataGridViewTextBoxColumn.Name = "idaccountingrecodDataGridViewTextBoxColumn";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(517, 22);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(87, 16);
-            this.label36.TabIndex = 18;
-            this.label36.Text = "Tag Number ";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(616, 22);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(148, 22);
-            this.textBox9.TabIndex = 20;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(517, 54);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(114, 16);
-            this.label37.TabIndex = 18;
-            this.label37.Text = "New Tag Number";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(636, 50);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(148, 22);
-            this.textBox10.TabIndex = 20;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(790, 50);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(22, 22);
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(517, 84);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(44, 16);
-            this.label38.TabIndex = 18;
-            this.label38.Text = "Brand";
-            // 
-            // textBox11
-            // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(616, 78);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(245, 22);
-            this.textBox11.TabIndex = 20;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(517, 114);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(97, 16);
-            this.label39.TabIndex = 18;
-            this.label39.Text = "Model Number";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(617, 108);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(245, 22);
-            this.textBox12.TabIndex = 20;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(517, 142);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(94, 16);
-            this.label40.TabIndex = 18;
-            this.label40.Text = "Serial Number";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(617, 136);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(245, 22);
-            this.textBox13.TabIndex = 20;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(517, 176);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(85, 16);
-            this.label41.TabIndex = 18;
-            this.label41.Text = "Responsible";
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.DataSource = this.responsibleBindingSource;
-            this.comboBox6.DisplayMember = "assetResponsiblePossition";
-            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(617, 171);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(226, 24);
-            this.comboBox6.TabIndex = 19;
-            this.comboBox6.ValueMember = "IdAssetResponsible";
-            // 
-            // responsibleBindingSource
-            // 
-            this.responsibleBindingSource.DataMember = "Responsible";
-            this.responsibleBindingSource.DataSource = this.assetcontrolDataSet10;
-            // 
-            // assetcontrolDataSet10
-            // 
-            this.assetcontrolDataSet10.DataSetName = "AssetcontrolDataSet10";
-            this.assetcontrolDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // responsibleTableAdapter
-            // 
-            this.responsibleTableAdapter.ClearBeforeFill = true;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(517, 209);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(102, 16);
-            this.label42.TabIndex = 18;
-            this.label42.Text = "Invoice Number";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(617, 203);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(299, 22);
-            this.textBox14.TabIndex = 20;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(520, 254);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(120, 24);
-            this.checkBox1.TabIndex = 26;
-            this.checkBox1.Text = "Asset Status";
-            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // newTagNoDataGridViewTextBoxColumn
             // 
@@ -1063,11 +866,208 @@ namespace Asset
             this.supplierDataGridViewTextBoxColumn.HeaderText = "Supplier";
             this.supplierDataGridViewTextBoxColumn.Name = "supplierDataGridViewTextBoxColumn";
             // 
+            // accountingVBindingSource1
+            // 
+            this.accountingVBindingSource1.DataMember = "AccountingV";
+            this.accountingVBindingSource1.DataSource = this.assetcontrolDataSet9;
+            // 
+            // assetcontrolDataSet9
+            // 
+            this.assetcontrolDataSet9.DataSetName = "AssetcontrolDataSet9";
+            this.assetcontrolDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // assetcontrolDataSet8
+            // 
+            this.assetcontrolDataSet8.DataSetName = "AssetcontrolDataSet8";
+            this.assetcontrolDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // accountingVBindingSource
+            // 
+            this.accountingVBindingSource.DataMember = "AccountingV";
+            this.accountingVBindingSource.DataSource = this.assetcontrolDataSet8;
+            // 
+            // accountingVTableAdapter
+            // 
+            this.accountingVTableAdapter.ClearBeforeFill = true;
+            // 
+            // accountingVTableAdapter1
+            // 
+            this.accountingVTableAdapter1.ClearBeforeFill = true;
+            // 
+            // idaccountingrecodDataGridViewTextBoxColumn
+            // 
+            this.idaccountingrecodDataGridViewTextBoxColumn.DataPropertyName = "Record";
+            this.idaccountingrecodDataGridViewTextBoxColumn.HeaderText = "Idaccountingrecod";
+            this.idaccountingrecodDataGridViewTextBoxColumn.Name = "idaccountingrecodDataGridViewTextBoxColumn";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(508, 22);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(87, 16);
+            this.label36.TabIndex = 18;
+            this.label36.Text = "Tag Number ";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(607, 22);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(148, 22);
+            this.textBox9.TabIndex = 20;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(508, 54);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(114, 16);
+            this.label37.TabIndex = 18;
+            this.label37.Text = "New Tag Number";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.Location = new System.Drawing.Point(627, 50);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(148, 22);
+            this.textBox10.TabIndex = 20;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(781, 50);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(508, 84);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(44, 16);
+            this.label38.TabIndex = 18;
+            this.label38.Text = "Brand";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.Location = new System.Drawing.Point(607, 78);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(245, 22);
+            this.textBox11.TabIndex = 20;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(508, 114);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(97, 16);
+            this.label39.TabIndex = 18;
+            this.label39.Text = "Model Number";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Location = new System.Drawing.Point(608, 108);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(245, 22);
+            this.textBox12.TabIndex = 20;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(508, 142);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(94, 16);
+            this.label40.TabIndex = 18;
+            this.label40.Text = "Serial Number";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.Location = new System.Drawing.Point(608, 136);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(245, 22);
+            this.textBox13.TabIndex = 20;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(508, 176);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(85, 16);
+            this.label41.TabIndex = 18;
+            this.label41.Text = "Responsible";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.DataSource = this.responsibleBindingSource;
+            this.comboBox6.DisplayMember = "assetResponsiblePossition";
+            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(608, 171);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(226, 24);
+            this.comboBox6.TabIndex = 19;
+            this.comboBox6.ValueMember = "IdAssetResponsible";
+            // 
+            // responsibleBindingSource
+            // 
+            this.responsibleBindingSource.DataMember = "Responsible";
+            this.responsibleBindingSource.DataSource = this.assetcontrolDataSet10;
+            // 
+            // assetcontrolDataSet10
+            // 
+            this.assetcontrolDataSet10.DataSetName = "AssetcontrolDataSet10";
+            this.assetcontrolDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // responsibleTableAdapter
+            // 
+            this.responsibleTableAdapter.ClearBeforeFill = true;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(508, 209);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(102, 16);
+            this.label42.TabIndex = 18;
+            this.label42.Text = "Invoice Number";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox14.Location = new System.Drawing.Point(608, 203);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(245, 22);
+            this.textBox14.TabIndex = 20;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(511, 254);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(120, 24);
+            this.checkBox1.TabIndex = 26;
+            this.checkBox1.Text = "Asset Status";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // frmcontabilidad
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1396, 616);
+            this.ClientSize = new System.Drawing.Size(1288, 616);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);

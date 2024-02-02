@@ -48,6 +48,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -85,9 +86,9 @@
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label28.Location = new System.Drawing.Point(634, 28);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(165, 20);
+            this.label28.Size = new System.Drawing.Size(169, 20);
             this.label28.TabIndex = 23;
-            this.label28.Text = "Fecha de Selectividad";
+            this.label28.Text = "Fecha de Selectividad:";
             // 
             // label1
             // 
@@ -95,9 +96,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(22, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 20);
+            this.label1.Size = new System.Drawing.Size(173, 20);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Numero de Referencia";
+            this.label1.Text = "Numero de Referencia:";
             // 
             // textBox2
             // 
@@ -116,9 +117,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(22, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 20);
+            this.label3.Size = new System.Drawing.Size(45, 20);
             this.label3.TabIndex = 4;
-            this.label3.Text = "HTS";
+            this.label3.Text = "HTS:";
             // 
             // comboBox5
             // 
@@ -134,9 +135,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(22, 177);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(241, 20);
+            this.label4.Size = new System.Drawing.Size(245, 20);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Nombre Proveedor Import Export";
+            this.label4.Text = "Nombre Proveedor Import Export:";
             // 
             // textBox3
             // 
@@ -155,9 +156,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(22, 263);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 20);
+            this.label5.Size = new System.Drawing.Size(122, 20);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Numero de Tag";
+            this.label5.Text = "Numero de Tag:";
             // 
             // textBox4
             // 
@@ -176,7 +177,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(285, 455);
+            this.button1.Location = new System.Drawing.Point(452, 223);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(76, 66);
             this.button1.TabIndex = 26;
@@ -190,9 +191,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(22, 221);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(196, 20);
+            this.label6.Size = new System.Drawing.Size(200, 20);
             this.label6.TabIndex = 4;
-            this.label6.Text = "Monto De la Declaracion $";
+            this.label6.Text = "Monto De la Declaracion $:";
             // 
             // textBox5
             // 
@@ -211,9 +212,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(22, 125);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(138, 20);
+            this.label7.Size = new System.Drawing.Size(142, 20);
             this.label7.TabIndex = 4;
-            this.label7.Text = "Unidad de Medida";
+            this.label7.Text = "Unidad de Medida:";
             // 
             // comboBox1
             // 
@@ -229,9 +230,9 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(634, 88);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 20);
+            this.label8.Size = new System.Drawing.Size(95, 20);
             this.label8.TabIndex = 4;
-            this.label8.Text = "Comentario";
+            this.label8.Text = "Comentario:";
             // 
             // textBox6
             // 
@@ -242,14 +243,26 @@
             this.textBox6.Location = new System.Drawing.Point(740, 88);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(301, 111);
+            this.textBox6.Size = new System.Drawing.Size(301, 0);
             this.textBox6.TabIndex = 5;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.Location = new System.Drawing.Point(805, 85);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(284, 90);
+            this.textBox7.TabIndex = 5;
             // 
             // frmimportexport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1101, 658);
+            this.ClientSize = new System.Drawing.Size(1101, 319);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.comboBox5);
@@ -258,6 +271,7 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label6);
@@ -269,8 +283,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmimportexport";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Import Export";
             this.Load += new System.EventHandler(this.frmimportexport_Load);
             this.ResumeLayout(false);
@@ -299,5 +317,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox7;
     }
 }

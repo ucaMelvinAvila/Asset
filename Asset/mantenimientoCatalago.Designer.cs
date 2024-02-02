@@ -42,7 +42,7 @@ namespace Asset
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txtcomentario = new System.Windows.Forms.TextBox();
-            this.txtdescricion = new System.Windows.Forms.TextBox();
+            this.txtdescripcion = new System.Windows.Forms.TextBox();
             this.txtnhts = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -82,7 +82,7 @@ namespace Asset
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(476, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(479, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -157,7 +157,7 @@ namespace Asset
             // 
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.txtcomentario);
-            this.groupBox1.Controls.Add(this.txtdescricion);
+            this.groupBox1.Controls.Add(this.txtdescripcion);
             this.groupBox1.Controls.Add(this.txtnhts);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -188,12 +188,12 @@ namespace Asset
             this.txtcomentario.Size = new System.Drawing.Size(201, 62);
             this.txtcomentario.TabIndex = 3;
             // 
-            // txtdescricion
+            // txtdescripcion
             // 
-            this.txtdescricion.Location = new System.Drawing.Point(187, 71);
-            this.txtdescricion.Name = "txtdescricion";
-            this.txtdescricion.Size = new System.Drawing.Size(201, 20);
-            this.txtdescricion.TabIndex = 3;
+            this.txtdescripcion.Location = new System.Drawing.Point(187, 71);
+            this.txtdescripcion.Name = "txtdescripcion";
+            this.txtdescripcion.Size = new System.Drawing.Size(201, 20);
+            this.txtdescripcion.TabIndex = 3;
             // 
             // txtnhts
             // 
@@ -426,7 +426,7 @@ namespace Asset
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 356);
+            this.ClientSize = new System.Drawing.Size(479, 356);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -435,7 +435,6 @@ namespace Asset
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "mantenimientoCatalago";
-            this.Opacity = 0.85D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -465,7 +464,7 @@ namespace Asset
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtcomentario;
-        private System.Windows.Forms.TextBox txtdescricion;
+        private System.Windows.Forms.TextBox txtdescripcion;
         private System.Windows.Forms.TextBox txtnhts;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button1;

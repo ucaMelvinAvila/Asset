@@ -301,6 +301,7 @@ namespace Asset
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmcompras";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Captura de Datos de Compras";
             this.Load += new System.EventHandler(this.frmcompras_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();

@@ -189,6 +189,7 @@ namespace Asset
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmprintlabels";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Impresion de Labels Por Tag Number";
             this.Load += new System.EventHandler(this.frmprintlabels_Load);
             this.ResumeLayout(false);

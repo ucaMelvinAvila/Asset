@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Asset
 {
@@ -17,9 +18,44 @@ namespace Asset
         public MDIParent1()
         {
             InitializeComponent();
+            CargarDatosEnChart();
         }
 
-        private void ShowNewForm(object sender, EventArgs e)
+        private const string ConnectionString = "Data Source=UCAWVMW\\ASSET;Initial Catalog=Assetcontrol;Integrated Security=true;";
+
+        private void CargarDatosEnChart()
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
+                {
+                    connection.Open();
+
+                    // Reemplaza "MainChart1" con el nombre real de tu vista
+                    using (SqlCommand command = new SqlCommand("SELECT * FROM MainChart1", connection))
+                    {
+                        SqlDataAdapter adapter = new SqlDataAdapter(command);
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+
+                        // Asigna los datos al DataSource del Chart
+                        chart1.DataSource = dataTable;
+
+                        // Especifica los campos que se utilizarán para los ejes X y Y
+                        chart1.Series[0].XValueMember = "Responsible";
+                        chart1.Series[0].YValueMembers = "Total Cost $";
+
+                        // Actualiza el gráfico
+                        chart1.DataBind();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar datos en el Chart: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+            private void ShowNewForm(object sender, EventArgs e)
         {
             Form childForm = new Form();
             childForm.MdiParent = this;
