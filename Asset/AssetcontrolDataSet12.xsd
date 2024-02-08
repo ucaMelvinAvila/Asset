@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AssetcontrolDataSet12" targetNamespace="http://tempuri.org/AssetcontrolDataSet12.xsd" xmlns:mstns="http://tempuri.org/AssetcontrolDataSet12.xsd" xmlns="http://tempuri.org/AssetcontrolDataSet12.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AssetcontrolConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AssetcontrolConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Asset.Properties.Settings.GlobalReference.Default.AssetcontrolConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ImportExport_vTableAdapter" GeneratorDataComponentClassName="ImportExport_vTableAdapter" Name="ImportExport_v" UserDataComponentName="ImportExport_vTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AssetcontrolConnectionString (Settings)" DbObjectName="Assetcontrol.dbo.ImportExport_v" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT GoodsDeclarationNumber, GoodsDeclarationReference, GoodsDeclarationSelectivityDate, TariffItemNumberHTS, SupplierNameImportExport, GoodsDeclarationAmount, NewTagNumber, InvoiceNumber, Description, Comment FROM dbo.ImportExport_v</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="GoodsDeclarationNumber" DataSetColumn="GoodsDeclarationNumber" />
+              <Mapping SourceColumn="GoodsDeclarationReference" DataSetColumn="GoodsDeclarationReference" />
+              <Mapping SourceColumn="GoodsDeclarationSelectivityDate" DataSetColumn="GoodsDeclarationSelectivityDate" />
+              <Mapping SourceColumn="TariffItemNumberHTS" DataSetColumn="TariffItemNumberHTS" />
+              <Mapping SourceColumn="SupplierNameImportExport" DataSetColumn="SupplierNameImportExport" />
+              <Mapping SourceColumn="GoodsDeclarationAmount" DataSetColumn="GoodsDeclarationAmount" />
+              <Mapping SourceColumn="NewTagNumber" DataSetColumn="NewTagNumber" />
+              <Mapping SourceColumn="InvoiceNumber" DataSetColumn="InvoiceNumber" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Comment" DataSetColumn="Comment" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AssetcontrolDataSet12" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AssetcontrolDataSet12" msprop:Generator_UserDSName="AssetcontrolDataSet12">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ImportExport_v" msprop:Generator_TableClassName="ImportExport_vDataTable" msprop:Generator_TableVarName="tableImportExport_v" msprop:Generator_TablePropName="ImportExport_v" msprop:Generator_RowDeletingName="ImportExport_vRowDeleting" msprop:Generator_RowChangingName="ImportExport_vRowChanging" msprop:Generator_RowEvHandlerName="ImportExport_vRowChangeEventHandler" msprop:Generator_RowDeletedName="ImportExport_vRowDeleted" msprop:Generator_UserTableName="ImportExport_v" msprop:Generator_RowChangedName="ImportExport_vRowChanged" msprop:Generator_RowEvArgName="ImportExport_vRowChangeEvent" msprop:Generator_RowClassName="ImportExport_vRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GoodsDeclarationNumber" msprop:Generator_ColumnVarNameInTable="columnGoodsDeclarationNumber" msprop:Generator_ColumnPropNameInRow="GoodsDeclarationNumber" msprop:Generator_ColumnPropNameInTable="GoodsDeclarationNumberColumn" msprop:Generator_UserColumnName="GoodsDeclarationNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GoodsDeclarationReference" msprop:Generator_ColumnVarNameInTable="columnGoodsDeclarationReference" msprop:Generator_ColumnPropNameInRow="GoodsDeclarationReference" msprop:Generator_ColumnPropNameInTable="GoodsDeclarationReferenceColumn" msprop:Generator_UserColumnName="GoodsDeclarationReference" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GoodsDeclarationSelectivityDate" msprop:Generator_ColumnVarNameInTable="columnGoodsDeclarationSelectivityDate" msprop:Generator_ColumnPropNameInRow="GoodsDeclarationSelectivityDate" msprop:Generator_ColumnPropNameInTable="GoodsDeclarationSelectivityDateColumn" msprop:Generator_UserColumnName="GoodsDeclarationSelectivityDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TariffItemNumberHTS" msprop:Generator_ColumnVarNameInTable="columnTariffItemNumberHTS" msprop:Generator_ColumnPropNameInRow="TariffItemNumberHTS" msprop:Generator_ColumnPropNameInTable="TariffItemNumberHTSColumn" msprop:Generator_UserColumnName="TariffItemNumberHTS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SupplierNameImportExport" msprop:Generator_ColumnVarNameInTable="columnSupplierNameImportExport" msprop:Generator_ColumnPropNameInRow="SupplierNameImportExport" msprop:Generator_ColumnPropNameInTable="SupplierNameImportExportColumn" msprop:Generator_UserColumnName="SupplierNameImportExport" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GoodsDeclarationAmount" msprop:Generator_ColumnVarNameInTable="columnGoodsDeclarationAmount" msprop:Generator_ColumnPropNameInRow="GoodsDeclarationAmount" msprop:Generator_ColumnPropNameInTable="GoodsDeclarationAmountColumn" msprop:Generator_UserColumnName="GoodsDeclarationAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NewTagNumber" msprop:Generator_ColumnVarNameInTable="columnNewTagNumber" msprop:Generator_ColumnPropNameInRow="NewTagNumber" msprop:Generator_ColumnPropNameInTable="NewTagNumberColumn" msprop:Generator_UserColumnName="NewTagNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InvoiceNumber" msprop:Generator_ColumnVarNameInTable="columnInvoiceNumber" msprop:Generator_ColumnPropNameInRow="InvoiceNumber" msprop:Generator_ColumnPropNameInTable="InvoiceNumberColumn" msprop:Generator_UserColumnName="InvoiceNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="75" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -178,6 +178,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AssetcontrolDataSet10.xsd</DependentUpon>
     </Compile>
+    <Compile Include="AssetcontrolDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetcontrolDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AssetcontrolDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetcontrolDataSet12.xsd</DependentUpon>
+    </Compile>
     <Compile Include="AssetcontrolDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -229,6 +239,11 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HTSdataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HTSdataset.xsd</DependentUpon>
     </Compile>
     <Compile Include="mantenimientoCatalago.cs">
       <SubType>Form</SubType>
@@ -416,6 +431,28 @@
     <None Include="AssetcontrolDataSet10.xss">
       <DependentUpon>AssetcontrolDataSet10.xsd</DependentUpon>
     </None>
+    <None Include="AssetcontrolDataSet11.xsc">
+      <DependentUpon>AssetcontrolDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="AssetcontrolDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AssetcontrolDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AssetcontrolDataSet11.xss">
+      <DependentUpon>AssetcontrolDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="AssetcontrolDataSet12.xsc">
+      <DependentUpon>AssetcontrolDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="AssetcontrolDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AssetcontrolDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AssetcontrolDataSet12.xss">
+      <DependentUpon>AssetcontrolDataSet12.xsd</DependentUpon>
+    </None>
     <None Include="AssetcontrolDataSet2.xsc">
       <DependentUpon>AssetcontrolDataSet2.xsd</DependentUpon>
     </None>
@@ -503,6 +540,17 @@
     </None>
     <None Include="AssetcontrolDataSet9.xss">
       <DependentUpon>AssetcontrolDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="HTSdataset.xsc">
+      <DependentUpon>HTSdataset.xsd</DependentUpon>
+    </None>
+    <None Include="HTSdataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HTSdataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HTSdataset.xss">
+      <DependentUpon>HTSdataset.xsd</DependentUpon>
     </None>
     <None Include="Models\AssetControl.edmx.diagram">
       <DependentUpon>AssetControl.edmx</DependentUpon>

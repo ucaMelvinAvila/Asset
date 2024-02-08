@@ -24,22 +24,36 @@ namespace Asset
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(ConnectionString))
+                if (TodosLosCamposEstanLlenos())
                 {
-                    connection.Open();
-
-                    using (SqlCommand command = new SqlCommand("INSERT INTO Purchasing (Id_Supplier, PurchaseOrder, Description, NewTagNumber ) VALUES (@Id_Supplier, @PurchaseOrder, @Description, @NewTagNumber)", connection))
+                    // Validar si el NewTagNumber existe en la tabla [Assetcontrol].[dbo].[Accounting]
+                    if (!ExisteNewTagNumber(txttagnumber.Text))
                     {
-                        // Configurar parámetros
-                        command.Parameters.AddWithValue("@Id_Supplier", cmbproveedor.SelectedValue);
-                        command.Parameters.AddWithValue("@PurchaseOrder", txtpo.Text);
-                        command.Parameters.AddWithValue("@Description", txtdescripcion.Text);
-                        command.Parameters.AddWithValue("@NewTagNumber", txttagnumber.Text);
-                        command.ExecuteNonQuery();
-                        this.purchasingVTableAdapter.Fill(this.assetcontrolDataSet7.PurchasingV);
+                        MessageBox.Show("Debe solicitar a Contabilidad que asigne un Tag para este artículo.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return; // Salir del método sin realizar el insert
                     }
 
-                    MessageBox.Show("Registro de compras guardado correctamente.");
+                    using (SqlConnection connection = new SqlConnection(ConnectionString))
+                    {
+                        connection.Open();
+
+                        using (SqlCommand command = new SqlCommand("INSERT INTO Purchasing (Id_Supplier, PurchaseOrder, Description, NewTagNumber ) VALUES (@Id_Supplier, @PurchaseOrder, @Description, @NewTagNumber)", connection))
+                        {
+                            // Configurar parámetros
+                            command.Parameters.AddWithValue("@Id_Supplier", cmbproveedor.SelectedValue);
+                            command.Parameters.AddWithValue("@PurchaseOrder", txtpo.Text);
+                            command.Parameters.AddWithValue("@Description", txtdescripcion.Text);
+                            command.Parameters.AddWithValue("@NewTagNumber", txttagnumber.Text);
+                            command.ExecuteNonQuery();
+                            this.purchasingVTableAdapter.Fill(this.assetcontrolDataSet7.PurchasingV);
+                        }
+
+                        MessageBox.Show("Registro de compras guardado correctamente.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Todos los campos son obligatorios. Por favor, complete todos los campos antes de guardar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch (Exception ex)
@@ -47,6 +61,31 @@ namespace Asset
                 MessageBox.Show($"Error al guardar: {ex.Message}");
             }
 
+        }
+
+        private bool TodosLosCamposEstanLlenos()
+        {
+            // Verificar cada campo y devolver false si alguno está vacío
+            return !string.IsNullOrWhiteSpace(txtpo.Text) &&
+                   !string.IsNullOrWhiteSpace(txtdescripcion.Text) &&
+                   !string.IsNullOrWhiteSpace(txttagnumber.Text) &&
+                   true; // Devolver true si todos los campos están llenos
+        }
+
+        private bool ExisteNewTagNumber(string newTagNumber)
+        {
+            // Consultar si el NewTagNumber existe en la tabla [Assetcontrol].[dbo].[Accounting]
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand("SELECT COUNT(*) FROM [Assetcontrol].[dbo].[Accounting] WHERE NewTagNumber = @NewTagNumber", connection))
+                {
+                    command.Parameters.AddWithValue("@NewTagNumber", newTagNumber);
+                    int count = (int)command.ExecuteScalar();
+                    return count > 0;
+                }
+            }
         }
 
     }

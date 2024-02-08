@@ -163,5 +163,10 @@ namespace Asset
             mantenimientoCatalago mantenimientoCatalago = new mantenimientoCatalago();
             mantenimientoCatalago.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            chart1.Visible = true;
+        }
     }
 }

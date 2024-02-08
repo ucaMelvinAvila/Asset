@@ -107,7 +107,7 @@ namespace Asset
             this.txtpo.Location = new System.Drawing.Point(211, 27);
             this.txtpo.Name = "txtpo";
             this.txtpo.Size = new System.Drawing.Size(231, 22);
-            this.txtpo.TabIndex = 3;
+            this.txtpo.TabIndex = 1;
             // 
             // textBox2
             // 
@@ -130,7 +130,7 @@ namespace Asset
             this.txttagnumber.Location = new System.Drawing.Point(211, 151);
             this.txttagnumber.Name = "txttagnumber";
             this.txttagnumber.Size = new System.Drawing.Size(446, 22);
-            this.txttagnumber.TabIndex = 5;
+            this.txttagnumber.TabIndex = 3;
             // 
             // dataGridView2
             // 
@@ -151,7 +151,7 @@ namespace Asset
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 82;
             this.dataGridView2.Size = new System.Drawing.Size(1228, 320);
-            this.dataGridView2.TabIndex = 7;
+            this.dataGridView2.TabIndex = 6;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // AccountingTag
@@ -217,7 +217,7 @@ namespace Asset
             this.button2.Location = new System.Drawing.Point(699, 171);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(83, 69);
-            this.button2.TabIndex = 8;
+            this.button2.TabIndex = 5;
             this.button2.Text = "Guardar";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = false;
@@ -232,7 +232,7 @@ namespace Asset
             this.cmbproveedor.Location = new System.Drawing.Point(211, 183);
             this.cmbproveedor.Name = "cmbproveedor";
             this.cmbproveedor.Size = new System.Drawing.Size(388, 24);
-            this.cmbproveedor.TabIndex = 9;
+            this.cmbproveedor.TabIndex = 4;
             this.cmbproveedor.ValueMember = "Id_Supplier";
             // 
             // supplierBindingSource
@@ -265,7 +265,7 @@ namespace Asset
             this.txtdescripcion.Multiline = true;
             this.txtdescripcion.Name = "txtdescripcion";
             this.txtdescripcion.Size = new System.Drawing.Size(352, 74);
-            this.txtdescripcion.TabIndex = 3;
+            this.txtdescripcion.TabIndex = 2;
             // 
             // purchasing_VTableAdapter
             // 

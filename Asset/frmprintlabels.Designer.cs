@@ -52,7 +52,7 @@ namespace Asset
             this.button1.Location = new System.Drawing.Point(169, 412);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 69);
-            this.button1.TabIndex = 1;
+            this.button1.TabIndex = 8;
             this.button1.Text = "btnImprimir";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
@@ -62,14 +62,14 @@ namespace Asset
             this.txtNewTagNumber.Location = new System.Drawing.Point(169, 177);
             this.txtNewTagNumber.Name = "txtNewTagNumber";
             this.txtNewTagNumber.Size = new System.Drawing.Size(121, 20);
-            this.txtNewTagNumber.TabIndex = 2;
+            this.txtNewTagNumber.TabIndex = 3;
             // 
             // txtAssetID
             // 
             this.txtAssetID.Location = new System.Drawing.Point(169, 214);
             this.txtAssetID.Name = "txtAssetID";
             this.txtAssetID.Size = new System.Drawing.Size(156, 20);
-            this.txtAssetID.TabIndex = 3;
+            this.txtAssetID.TabIndex = 4;
             this.txtAssetID.TextChanged += new System.EventHandler(this.txtAssetID_TextChanged);
             // 
             // label1
@@ -104,14 +104,14 @@ namespace Asset
             this.txtDescription.Location = new System.Drawing.Point(169, 255);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(156, 20);
-            this.txtDescription.TabIndex = 3;
+            this.txtDescription.TabIndex = 5;
             // 
             // txtSupplierName
             // 
             this.txtSupplierName.Location = new System.Drawing.Point(169, 295);
             this.txtSupplierName.Name = "txtSupplierName";
             this.txtSupplierName.Size = new System.Drawing.Size(156, 20);
-            this.txtSupplierName.TabIndex = 3;
+            this.txtSupplierName.TabIndex = 6;
             // 
             // label4
             // 
@@ -127,7 +127,7 @@ namespace Asset
             this.txtPlacedInService.Location = new System.Drawing.Point(169, 332);
             this.txtPlacedInService.Name = "txtPlacedInService";
             this.txtPlacedInService.Size = new System.Drawing.Size(193, 20);
-            this.txtPlacedInService.TabIndex = 3;
+            this.txtPlacedInService.TabIndex = 7;
             // 
             // label5
             // 
@@ -144,7 +144,7 @@ namespace Asset
             this.btnBuscar.Location = new System.Drawing.Point(235, 42);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(55, 44);
-            this.btnBuscar.TabIndex = 7;
+            this.btnBuscar.TabIndex = 2;
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
@@ -153,7 +153,7 @@ namespace Asset
             this.txtBuscar.Location = new System.Drawing.Point(49, 55);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(121, 20);
-            this.txtBuscar.TabIndex = 2;
+            this.txtBuscar.TabIndex = 1;
             // 
             // label6
             // 

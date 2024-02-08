@@ -407,7 +407,7 @@ namespace Asset
             this.comboBox1.Location = new System.Drawing.Point(158, 21);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(337, 24);
-            this.comboBox1.TabIndex = 19;
+            this.comboBox1.TabIndex = 1;
             this.comboBox1.ValueMember = "IdAssetCostGLACCT";
             // 
             // assetcontrolDataSet
@@ -449,7 +449,7 @@ namespace Asset
             this.comboBox2.Location = new System.Drawing.Point(158, 52);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(217, 24);
-            this.comboBox2.TabIndex = 19;
+            this.comboBox2.TabIndex = 2;
             this.comboBox2.ValueMember = "IdProject";
             // 
             // projectsBindingSource
@@ -481,7 +481,7 @@ namespace Asset
             this.comboBox3.Location = new System.Drawing.Point(158, 87);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(337, 24);
-            this.comboBox3.TabIndex = 19;
+            this.comboBox3.TabIndex = 3;
             this.comboBox3.ValueMember = "IdAccumlatedDepGLA";
             // 
             // accumulatedDepreciationGLAcctBindingSource
@@ -513,7 +513,7 @@ namespace Asset
             this.comboBox4.Location = new System.Drawing.Point(179, 127);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(316, 24);
-            this.comboBox4.TabIndex = 19;
+            this.comboBox4.TabIndex = 4;
             this.comboBox4.ValueMember = "IdDeprecationExpenseGL";
             // 
             // depreciationExpenseGLAcctBindingSource
@@ -565,7 +565,7 @@ namespace Asset
             this.comboBox5.Location = new System.Drawing.Point(158, 169);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(337, 24);
-            this.comboBox5.TabIndex = 19;
+            this.comboBox5.TabIndex = 5;
             this.comboBox5.ValueMember = "Iddepartment";
             // 
             // departmentBindingSource
@@ -604,7 +604,7 @@ namespace Asset
             this.textBox1.Location = new System.Drawing.Point(158, 206);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(245, 22);
-            this.textBox1.TabIndex = 20;
+            this.textBox1.TabIndex = 6;
             // 
             // textBox2
             // 
@@ -612,7 +612,7 @@ namespace Asset
             this.textBox2.Location = new System.Drawing.Point(158, 242);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(245, 22);
-            this.textBox2.TabIndex = 20;
+            this.textBox2.TabIndex = 7;
             // 
             // textBox3
             // 
@@ -620,7 +620,7 @@ namespace Asset
             this.textBox3.Location = new System.Drawing.Point(158, 273);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(245, 22);
-            this.textBox3.TabIndex = 20;
+            this.textBox3.TabIndex = 8;
             // 
             // textBox4
             // 
@@ -629,7 +629,7 @@ namespace Asset
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(262, 85);
-            this.textBox4.TabIndex = 20;
+            this.textBox4.TabIndex = 22;
             // 
             // textBox5
             // 
@@ -637,7 +637,7 @@ namespace Asset
             this.textBox5.Location = new System.Drawing.Point(1019, 93);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(117, 22);
-            this.textBox5.TabIndex = 20;
+            this.textBox5.TabIndex = 19;
             // 
             // textBox6
             // 
@@ -653,7 +653,7 @@ namespace Asset
             this.textBox7.Location = new System.Drawing.Point(1019, 167);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(117, 22);
-            this.textBox7.TabIndex = 20;
+            this.textBox7.TabIndex = 21;
             // 
             // dateTimePicker1
             // 
@@ -661,7 +661,7 @@ namespace Asset
             this.dateTimePicker1.Location = new System.Drawing.Point(1019, 19);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(262, 22);
-            this.dateTimePicker1.TabIndex = 22;
+            this.dateTimePicker1.TabIndex = 17;
             // 
             // dateTimePicker2
             // 
@@ -669,7 +669,7 @@ namespace Asset
             this.dateTimePicker2.Location = new System.Drawing.Point(1019, 55);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(262, 22);
-            this.dateTimePicker2.TabIndex = 22;
+            this.dateTimePicker2.TabIndex = 18;
             // 
             // label33
             // 
@@ -721,7 +721,7 @@ namespace Asset
             this.btneditar.Location = new System.Drawing.Point(619, 526);
             this.btneditar.Name = "btneditar";
             this.btneditar.Size = new System.Drawing.Size(76, 74);
-            this.btneditar.TabIndex = 23;
+            this.btneditar.TabIndex = 25;
             this.btneditar.Text = "Editar";
             this.btneditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btneditar.UseVisualStyleBackColor = true;
@@ -762,7 +762,7 @@ namespace Asset
             this.btneliminar.Location = new System.Drawing.Point(783, 526);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(76, 74);
-            this.btneliminar.TabIndex = 23;
+            this.btneliminar.TabIndex = 26;
             this.btneliminar.Text = "Eliminar";
             this.btneliminar.UseVisualStyleBackColor = true;
             // 
@@ -774,7 +774,7 @@ namespace Asset
             this.button4.Location = new System.Drawing.Point(701, 526);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(76, 74);
-            this.button4.TabIndex = 23;
+            this.button4.TabIndex = 24;
             this.button4.Text = "Print Tags";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.UseVisualStyleBackColor = true;
@@ -805,7 +805,7 @@ namespace Asset
             this.dataGridView1.Location = new System.Drawing.Point(12, 314);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1269, 206);
-            this.dataGridView1.TabIndex = 24;
+            this.dataGridView1.TabIndex = 27;
             // 
             // newTagNoDataGridViewTextBoxColumn
             // 
@@ -916,7 +916,7 @@ namespace Asset
             this.textBox9.Location = new System.Drawing.Point(607, 22);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(148, 22);
-            this.textBox9.TabIndex = 20;
+            this.textBox9.TabIndex = 9;
             // 
             // label37
             // 
@@ -934,7 +934,7 @@ namespace Asset
             this.textBox10.Location = new System.Drawing.Point(627, 50);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(148, 22);
-            this.textBox10.TabIndex = 20;
+            this.textBox10.TabIndex = 10;
             // 
             // pictureBox1
             // 
@@ -961,7 +961,7 @@ namespace Asset
             this.textBox11.Location = new System.Drawing.Point(607, 78);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(245, 22);
-            this.textBox11.TabIndex = 20;
+            this.textBox11.TabIndex = 11;
             // 
             // label39
             // 
@@ -979,7 +979,7 @@ namespace Asset
             this.textBox12.Location = new System.Drawing.Point(608, 108);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(245, 22);
-            this.textBox12.TabIndex = 20;
+            this.textBox12.TabIndex = 12;
             // 
             // label40
             // 
@@ -997,7 +997,7 @@ namespace Asset
             this.textBox13.Location = new System.Drawing.Point(608, 136);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(245, 22);
-            this.textBox13.TabIndex = 20;
+            this.textBox13.TabIndex = 13;
             // 
             // label41
             // 
@@ -1018,7 +1018,7 @@ namespace Asset
             this.comboBox6.Location = new System.Drawing.Point(608, 171);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(226, 24);
-            this.comboBox6.TabIndex = 19;
+            this.comboBox6.TabIndex = 14;
             this.comboBox6.ValueMember = "IdAssetResponsible";
             // 
             // responsibleBindingSource
@@ -1051,7 +1051,7 @@ namespace Asset
             this.textBox14.Location = new System.Drawing.Point(608, 203);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(245, 22);
-            this.textBox14.TabIndex = 20;
+            this.textBox14.TabIndex = 15;
             // 
             // checkBox1
             // 
@@ -1059,7 +1059,7 @@ namespace Asset
             this.checkBox1.Location = new System.Drawing.Point(511, 254);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(120, 24);
-            this.checkBox1.TabIndex = 26;
+            this.checkBox1.TabIndex = 16;
             this.checkBox1.Text = "Asset Status";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
